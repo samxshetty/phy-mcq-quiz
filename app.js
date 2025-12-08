@@ -1,695 +1,915 @@
-class MATHSQuizApp {
+class PHYQuizApp {
     constructor() {
         this.questions = [
-  {
+ {
     id: 1,
-    question: "If φ be the angle between the tangent and radius vector at any point on the curve, r = f(θ) then tan φ equals to:",
-    options: ["dr/ds", "r(dθ/ds)", "r(dθ/dr)", "dθ/dr"],
+    question: "An experimental evidence for matter waves is",
+    options: ["photoelectric effect", "compton effect", "electron diffraction", "interference of light"],
     correct: 2
   },
   {
     id: 2,
-    question: "Curvature of a straight line is:",
-    options: ["∞", "0", "1", "none of these"],
-    correct: 1
+    question: "A wave packet is used to represent",
+    options: ["A light wave", "a stationary wave", "Matter wave", "a transverse wave"],
+    correct: 2
   },
   {
     id: 3,
-    question: "The angle between the radius vector r = a sin θ and tangent to the curve at any point is φ =",
-    options: ["θ/2", "θ", "0", "π/2"],
-    correct: 3
+    question: "Wave function associated with matter waves is a quantum mechanical equivalent of",
+    options: ["wavelength of the wave", "frequency of the wave", "amplitude of the wave", "phase of the wave"],
+    correct: 2
   },
   {
     id: 4,
-    question: "The radius of curvature of the curve y = x² when x = 0 is:",
-    options: ["1/√2", "√2", "2", "1/2"],
-    correct: 3
+    question: "The concept of matter wave was suggested by_________",
+    options: ["Heisenberg", "de Broglie", "Schrodinger", "Laplace"],
+    correct: 1
   },
   {
     id: 5,
-    question: "The polar form of the cartesian equation x² + y² = 9 is:",
-    options: ["r² = 81", "r² = 18", "r = 9", "r = 3"],
-    correct: 3
+    question: "The function representing matter waves must be ________",
+    options: ["complex", "real", "zero", "infinity"],
+    correct: 0
   },
   {
     id: 6,
-    question: "The radius of curvature of the curve y = eˣ at the point (0, 1) is:",
-    options: ["2√2", "√2", "2", "√2/2"],
+    question: "A particle with rest mass m₀ is moving with speed c. The de-broglie wavelength associated with it is",
+    options: ["zero", "infinity", "hγ/c²", "m₀c"],
     correct: 0
   },
   {
     id: 7,
-    question: "For the polar curve r = f(θ), the relation between θ and coordinates (x, y) is:",
-    options: ["tan θ = x/y", "tan θ = y/x", "x = r cos θ", "x = r sin θ"],
-    correct: 1
+    question: "The matter waves are",
+    options: ["light waves", "sound waves", "probablistic waves", "e.m.waves"],
+    correct: 2
   },
   {
     id: 8,
-    question: "The radius of curvature for the curve y = f(x) is ρ =",
-    options: ["(1+y₂²)^(3/2) / y₁", "(1+y₁²)^(3/2) / y₂", "(1+y₁²)^(2/3) / y₂", "(1-y₁²)^(3/2) / y₂"],
-    correct: 1
+    question: "The wavelength of matter waves does not depend on",
+    options: ["charge", "mass", "velocity", "momentum"],
+    correct: 0
   },
   {
     id: 9,
-    question: "The Maclaurin's series expansion of the function f(x) = eˣ is:",
-    options: ["1 - x - x²/2 - x³/6 + ⋯", "1 - x + x²/2 - x³/6 + ⋯", "1 + x + x²/2 + x³/6 + ⋯", "-1 + x - x²/2 + x³/6 - ⋯"],
+    question: "de Broglie wave length of a body of mass m and kinetic energy E is given by:",
+    options: ["λ = / h", "λ = h / meV", "λ = h / √(2mE)", "λ = h/2meV"],
     correct: 2
   },
   {
     id: 10,
-    question: "The radius of curvature at any point of the circle x² + y² = 16 is:",
-    options: ["4", "12", "16", "6"],
-    correct: 0
+    question: "If the energy of a particle is reduced to one-fourth then the percentage increase in the de-broglie wavelength is",
+    options: ["41%", "100%", "144%", "70%"],
+    correct: 1
   },
   {
     id: 11,
-    question: "If φ be the angle between the tangent and radius vector at any point on the curve, r = f(θ) then cot φ is equals to:",
-    options: ["r(dr/dθ)", "(1/r)(dr/dθ)", "r(dθ/dr)", "(1/r)(dθ/dr)"],
-    correct: 3
+    question: "The kinetic energy of electron and proton is the same. The relation between their de-broglie wavelengths λₑ and λₚ is",
+    options: ["λₑ = λₚ", "λₑ < λₚ", "λₑ > λₚ", "λₑ = 2λₚ"],
+    correct: 2
   },
   {
     id: 12,
-    question: "The Taylor's series expansion of the function f(x) about the point x = a is:",
-    options: ["f(a) + (x-a)f'(a)/1! + (x-a)²f''(a)/2! + ⋯", "f(a) - (x-a)f'(a)/1! - (x-a)²f''(a)/2! - ⋯", "f(a) + (x+a)f'(a)/1! + (x+a)²f''(a)/2! + ⋯", "f(x) + (x+a)f'(x)/1! + (x+a)²f''(x)/2! + ⋯"],
-    correct: 0
+    question: "The wave nature associated with electrons in motion was verified by",
+    options: ["Photoelectric effect", "Compton effect", "Diffraction by crystals", "incidence of electrons on metallic surface"],
+    correct: 2
   },
   {
     id: 13,
-    question: "If the curvature of a function f(x) is zero, then which of the following functions could be f(x)?",
-    options: ["ax + b", "ax² + bx + c", "sin x", "cos x"],
-    correct: 0
+    question: "…………… of a wave is the velocity with which variations in the shape of modulation or envelop of the wave propagate through space.",
+    options: ["The elliptical velocity", "The phase velocity", "The group velocity", "The circular velocity"],
+    correct: 2
   },
   {
     id: 14,
-    question: "The angle between the radius vector and tangent for the vector r = ae^(θ cot α) is:",
-    options: ["tan α", "cot α", "α", "θ"],
-    correct: 2
-  },
-  {
-    id: 15,
-    question: "The angle between the radius vector and tangent for the vector r = aθ is:",
-    options: ["tan⁻¹(1/θ)", "tan⁻¹(θ)", "r", "a/θ"],
-    correct: 0
-  },
-  {
-    id: 16,
-    question: "The radius of curvature to the curve x = at², y = 2at when t = 0 is:",
-    options: ["2a", "a", "2", "a/2"],
-    correct: 0
-  },
-  {
-    id: 17,
-    question: "The radius of curvature for the curve x = f(t), y = g(t) is ρ =",
-    options: ["(x'² + y'²)^(3/2) / (x'y'' + y'x'')", "(x'² - y'²)^(3/2) / (x'y'' - y'x'')", "(x'² + y'²)^(2/3) / (x'y'' + y'x'')", "(x'² + y'²)^(3/2) / (x'y'' - y'x'')"],
+    question: "The phase and group velocities does not depend on which of the following?",
+    options: ["Frequency", "Wavelength", "Phase constant", "Attenuation constant"],
     correct: 3
   },
   {
-    id: 18,
-    question: "The curvature of the function f(x) = x³ - x + 1 at x = 1 is:",
-    options: ["6/5", "6/√5", "6/5^(3/2)", "3/5^(3/2)"],
+    id: 15,
+    question: "de Broglie wavelength can be assigned to",
+    options: ["only electrons", "any stationary body", "any moving body", "only subatomic particles"],
     correct: 2
   },
   {
+    id: 16,
+    question: "Which one of the following objects, moving at the same speed, has the greatest de Broglie wavelength?",
+    options: ["Neutron", "Electron", "Tennis ball", "Foot ball"],
+    correct: 1
+  },
+  {
+    id: 17,
+    question: "The group velocity of matter waves associated with a moving particle is:",
+    options: ["The same as phase velocity", "Less than the particle velocity", "Equal to the particle velocity", "More than the particle velocity"],
+    correct: 2
+  },
+  {
+    id: 18,
+    question: "Uncertainty principle is applicable to",
+    options: ["Macroscopic particles", "Microscopic particles", "gases", "None"],
+    correct: 1
+  },
+  {
     id: 19,
-    question: "The radius of curvature for the curve r = f(θ) is ρ =",
-    options: ["(r² + r₁²)^(3/2) / (r² + 2r₁² - rr₂)", "(r² + r₁²)^(3/2) / (r² - 2r₁² - rr₂)", "(r² - r₁²)^(3/2) / (r² + 2r₁² - rr₂)", "(r² + r₁²)^(2/3) / (r² + 2r₁² - rr₂)"],
-    correct: 0
+    question: "According to Heisenberg uncertainty principle,",
+    options: ["E = mc²", "Δx x Δp >= h/4π", "λ = h / p", "Δx x Δp = h/6π"],
+    correct: 1
   },
   {
     id: 20,
-    question: "If the curvature of a curve increases then, the radius of curvature:",
-    options: ["increases", "decreases", "constant", "none of these"],
-    correct: 1
+    question: "If uncertainty in the position of an electron is zero, the uncertainty in its momentum would be",
+    options: ["zero", "< h/ 2λ", "> h/ 2λ", "Infinite"],
+    correct: 3
   },
-
-  // UNIT-II: Partial Differentiation
   {
     id: 21,
-    question: "If f(x, y, z) = x² + xyz + z, then the value of fₓ at (1,1,1)",
-    options: ["0", "1", "3", "-1"],
+    question: "How is the state of a quantum mechanical system completely specified?",
+    options: ["By its position in space", "By its time", "By its wavefunction", "By its angular momentum"],
     correct: 2
   },
   {
     id: 22,
-    question: "If z = 3x²y + 5y then ∂²z/∂x∂y is:",
-    options: ["3xy", "6x", "3x + 5", "6xy"],
-    correct: 1
+    question: "The wave function is an acceptable wave function if it is",
+    options: ["finite everywhere", "continous everywhere", "single valued everywhere", "having all these properties"],
+    correct: 3
   },
   {
     id: 23,
-    question: "The function f(x, y) = x² + y² + 6x - 12 has an extreme value at which one of the following intervals:",
-    options: ["(-3, 0)", "(0, 3)", "(0, 0)", "(-3, -3)"],
+    question: "Schrodinger's time independent equation is applicable for the particles with",
+    options: ["constant energy", "variable energy", "only constant potential energy", "all of these"],
     correct: 0
   },
   {
     id: 24,
-    question: "If u = yˣ then ∂u/∂x is:",
-    options: ["yˣ", "yˣ log y", "yˣ log x", "xyˣ⁻¹"],
-    correct: 1
+    question: "The Steady-state form of Schrodinger wave equation is _____________",
+    options: ["Linear", "Quadratic", "Cubic", "Nonlinear"],
+    correct: 0
   },
   {
     id: 25,
-    question: "If f(x, y, z) = x + y + z - log z, then fz(1,1,2)",
-    options: ["1/2", "1", "2", "0"],
-    correct: 0
+    question: "The values of Energy for which Schrodinger's steady state equation can be solved is called as",
+    options: ["Eigen Vectors", "Eigen Values", "Eigen Functions", "Operators"],
+    correct: 1
   },
   {
     id: 26,
-    question: "If f(x, y, z) = cos(xy) + sin(y) + z, then fₓ(1/2, π/2, 7)",
-    options: ["-π/(2√2)", "π/(4√3)", "-π/4", "π/√2"],
-    correct: 2
+    question: "The Schrodinger wave equation is a",
+    options: ["Linear differential equation", "Non-linear differential equation", "Second-order equation", "First-order equation"],
+    correct: 0
   },
   {
     id: 27,
-    question: "If x = r cos θ, y = r sin θ then the value of ∂(x,y)/∂(r,θ) is:",
-    options: ["r", "1", "0", "r²"],
-    correct: 0
+    question: "For a quantum wave particle, E = _____________",
+    options: ["ℏ k", "ℏ ω", "ℏ ω/2", "ℏ k/2"],
+    correct: 1
   },
   {
     id: 28,
-    question: "If u = yˣ then ∂u/∂y is:",
-    options: ["yˣ", "yˣ log log y", "yˣ log log x", "xyˣ⁻¹"],
-    correct: 0
+    question: "Which of the following can be a wave function?",
+    options: ["tan x", "sin x", "cot x", "sec x"],
+    correct: 1
   },
   {
     id: 29,
-    question: "If u = eˣ cos y and v = eˣ sin y the value of J(u,v/x,y) is:",
-    options: ["e²ˣ", "e²ˣ/2", "-e²ˣ/2", "e⁻²ˣ"],
-    correct: 0
+    question: "Which of the following is not a characteristic of wave function?",
+    options: ["Continuous", "Single valued", "Normalizable", "Multi valued"],
+    correct: 3
   },
   {
     id: 30,
-    question: "If u = x³ + y³, then ∂²u/∂x∂y is:",
-    options: ["-3", "3", "0", "3x + 3y"],
-    correct: 2
+    question: "The total probability of finding the particle in space must be __________",
+    options: ["zero", "unity", "infinity", "double"],
+    correct: 1
   },
   {
     id: 31,
-    question: "If f(x, y, z) = e^(xyz) then fₓ(2,2,2) is:",
-    options: ["4e⁸", "2e⁸", "8e⁸", "e⁸"],
+    question: "The normalized wave function must have ________ norm",
+    options: ["Unit", "zero", "finite", "infinite"],
     correct: 0
   },
   {
     id: 32,
-    question: "If x = uv, y = u/v then ∂(x,y)/∂(u,v) is:",
-    options: ["-2u/v", "-2v/u", "0", "1"],
-    correct: 0
+    question: "The square of the magnitude of the wave function is called_________",
+    options: ["current density", "probability density", "Normalization", "volume density"],
+    correct: 1
   },
   {
     id: 33,
-    question: "If f(x, y, z) = x² + xyz + z then fₓ at (1,0,1)",
-    options: ["1", "2", "3", "0"],
+    question: "According to the wave function and it first partial derivative should be _______ functions for all values of X",
+    options: ["Zero", "Continous", "Infinity", "Discontinous"],
     correct: 1
   },
   {
     id: 34,
-    question: "If z = log(x² + y²) then z_y(1,1) is:",
-    options: ["1", "2", "0", "3"],
-    correct: 0
+    question: "For E > 0, the particle has a ______ kinetic energy",
+    options: ["Zero", "Positive", "Negative", "Infinity"],
+    correct: 1
   },
   {
     id: 35,
-    question: "If J₁ = ∂(u,v)/∂(x,y), J₂ = ∂(x,y)/∂(u,v) then J₁J₂ is:",
-    options: ["2", "0", "1", "-1"],
+    question: "According to Max Born's interpretation, represents",
+    options: ["energy density", "particle density", "probability density", "charge density"],
     correct: 2
   },
   {
     id: 36,
-    question: "If f(x, y) = sin(x) + cos(y) + xy² where x = cos(t); y = sin(t), then df/dt at t = π/2 is:",
-    options: ["2", "-2", "1", "0"],
-    correct: 1
+    question: "In a one dimensional infinite potential well, energy of the particle En =",
+    options: ["n²h²/8mL²", "n²ħ²/8mL²", "n²h²/2mL²", "n²h²/4mL²"],
+    correct: 0
   },
   {
     id: 37,
-    question: "The Jacobian of p, q, r w.r.t x, y, z given p = x + y + z, q = y + z, r = z is:",
-    options: ["0", "1", "2", "-1"],
+    question: "The energy corresponding to the lowest permitted energy level for a particle in an infinite potential well is called",
+    options: ["Excited energy", "Zero point energy", "Metastable state energy", "None of these"],
     correct: 1
   },
   {
     id: 38,
-    question: "If f(x, y, z) = x² + y² + z² then f_xx(2,4,2) is:",
-    options: ["1", "2", "4", "8"],
-    correct: 1
+    question: "For a particle in the ground state in an one-dimensional potential well of width L and of infinite height, the probability of finding it will be maximum at a distance of",
+    options: ["L/2 from the wall", "L/4 from the wall", "3L/4 from the wall", "L=0 from the wall"],
+    correct: 0
   },
   {
     id: 39,
-    question: "Given u = x + y, v = xy then the Jacobian ∂(u,v)/∂(x,y) is:",
-    options: ["x + y", "0", "x - y", "1"],
+    question: "According to the particle in a box, the wave function of the particle lies in which region?",
+    options: ["x > 0", "x < 0", "0 < x < L", "x > L"],
     correct: 2
   },
   {
     id: 40,
-    question: "If z = 6x²y² + 8x² then ∂z/∂x is:",
-    options: ["6y² + 16x", "6x² + 8x²", "12xy² + 16x", "6x² + 6y² + 8x²"],
+    question: "The Energy of the particle is proportional to __________",
+    options: ["n", "n⁻¹", "n²", "n⁻²"],
     correct: 2
   },
   {
     id: 41,
-    question: "If f(x, y) = 2x³ - 4y², what is the value of fₓ and f_y at (3,2)",
-    options: ["fₓ = 54, f_y = -16", "fₓ = 16, f_y = -54", "fₓ = 54, f_y = 0", "fₓ = -54, f_y = -16"],
-    correct: 0
-  },
-  {
-    id: 42,
-    question: "If u = x + y and v = x - y the value of J(u,v/x,y) is:",
-    options: ["-2", "2", "1", "0"],
-    correct: 0
-  },
-  {
-    id: 43,
-    question: "If f(x, y) = x²y + x where x = t and y = t² then the value of df/dt when t = 1 is:",
-    options: ["2", "4", "1", "5"],
+    question: "The wave function shown in the figure for which quantum state corresponding to",
+    options: ["Ground state", "First excited state", "Second excited state", "Third excited state"],
     correct: 1
   },
   {
-    id: 44,
-    question: "If f(x, y) = sin(xy + x³y) then fₓ at (0,1) is:",
-    options: ["2", "5", "1", "0"],
+    id: 42,
+    question: "The de Broglie wavelength associated with a particle of mass 6.62 x 10⁻²⁹ kg travelling with a velocity 10⁵ ms⁻¹ is equal to",
+    options: ["10 nm", "1 nm", "0.1 nm", "0.01nm"],
     correct: 2
   },
   {
-    id: 45,
-    question: "If z = 3xy + 4x², then value of ∂z/∂x is:",
-    options: ["3y + 8x", "3x + 4x²", "3xy + 8x", "3y + 3x + 8x"],
+    id: 43,
+    question: "What is the energy of electron in terms of its ground state energy (E₁) when it jumps from n = 1 to n = 4 is",
+    options: ["E₁/9", "E₁/16", "16 E₁", "4 E₁"],
+    correct: 2
+  },
+  {
+    id: 44,
+    question: "An electron is trapped in a one dimensional potential well of width 1 Å. How much energy must be supplied to excite the electron from the ground state to second excited state?",
+    options: ["4.82 x 10⁻¹⁷ J", "4.82 x 10⁻¹⁸ J", "1.81 x 10⁻¹⁷ J", "1.81 x 10⁻¹⁸ J"],
     correct: 0
   },
   {
+    id: 45,
+    question: "Calculate the deBroglie wavelength associated with an electron with a kinetic energy of 2000 eV is",
+    options: ["2.74 Å", "0.274 Å", "27.4 Å", "0.0274 Å"],
+    correct: 1
+  },
+  {
     id: 46,
-    question: "Given f_xx = x², f_xy = 8, f_yy = y², then the nature of the stationary point at (√2, √2) is:",
-    options: ["Maximum", "Minimum", "Saddle point", "No maxima & minima"],
+    question: "The product of phase velocity and group velocity is equal to",
+    options: ["particle velocity", "velocity of light", "square of velocity of light", "square root of velocity of light"],
     correct: 2
   },
   {
     id: 47,
-    question: "If f(x, y) = x + y, where x = sin t; y = cos t then the value of df/dt at t = π/2",
-    options: ["2", "-2", "1", "0"],
-    correct: 3
+    question: "Calculate the Zero-point energy for a particle in an infinite potential well for an electron confined to a 1 nm atom.",
+    options: ["3.9 x10⁻²⁹ J", "4.9 X 10⁻²⁹ J", "5.9 X 10⁻²⁹ J", "6.9 X 10⁻²⁹ J"],
+    correct: 2
   },
-
-  // UNIT-III: Ordinary Differential Equations
   {
     id: 48,
-    question: "The order and degree of the differential equation (d²y/dx²)³ + (dy/dx)² + y = 0 is _______ and _______.",
-    options: ["1 and 3", "2 and 3", "2 and 2", "3 and 3"],
-    correct: 1
+    question: "The de Broglie wavelength associated with an electron moving with a speed of 10⁵ m/s",
+    options: ["0.727 Å", "7.27 Å", "72.7 Å", "727 Å"],
+    correct: 2
   },
   {
     id: 49,
-    question: "The order and degree of the differential equation [1 + (dy/dx)²]^(3/2) = d²y/dx² is _____ and ______.",
-    options: ["1 and 1", "2 and 1", "2 and 2", "1 and 3"],
-    correct: 2
+    question: "The ratio of energy of a photon with that of a neutron when both are associated with wavelength of 1 Å., given that the mass of neutron is 1.678 x 10⁻²⁷ Kg.",
+    options: ["2.5 x10⁵", "1.5 X 10⁵", "0.5 X 10⁵", "3.5 X 10⁵"],
+    correct: 1
   },
   {
     id: 50,
-    question: "The order and degree of the differential equation: d²y/dx² = [(dy/dx)² + 1]/x are ________ and ________.",
-    options: ["2 and 1", "1 and 2", "2 and 3", "2 and 2"],
-    correct: 0
+    question: "An electron is confirmed to move between two rigid walls separated by 20 Å. The de Broglie wavelength representing the ground state energy of an electron is (assume the potential to be zero)",
+    options: ["0.6 Å", "0.2 Å", "0.4 Å", "0.8 Å"],
+    correct: 2
   },
+
+  // Unit 2: Quantum Computing
   {
     id: 51,
-    question: "The differential equation having order 3 and degree 2 is ______.",
-    options: ["(d³y/dx³)² + x(dy/dx)² = 0", "d³y/dx³ + dy/dx + y = 0", "d³y/dx³ + y = 0", "d³y/dx³ + (dy/dx)² = 0"],
-    correct: 0
+    question: "In quantum computing, what is the basic unit of information?",
+    options: ["Giga", "Qubit", "Bit", "Byte"],
+    correct: 1
   },
   {
     id: 52,
-    question: "The differential equation having order 2 and degree 1 is _______.",
-    options: ["(d²y/dx²)³ + (dy/dx)² = 0", "d²y/dx² + √(dy/dx) = 0", "d²y/dx² + x(dy/dx) + y = 0", "(d²y/dx²)² + dy/dx = 0"],
-    correct: 2
+    question: "What do we call the pieces of information in a quantum computer?",
+    options: ["Bits", "Qubits", "Bytes", "Qubytes"],
+    correct: 1
   },
   {
     id: 53,
-    question: "The integrating factor (I.F.) for dy/dx + (2/x)y = sin x is:",
-    options: ["x²", "e²ˣ", "1/x²", "x²"],
+    question: "When the information is between 0 and 1 in a quantum computer, what do we call this?",
+    options: ["Superposition", "Same position", "Ordinary position", "Different position"],
     correct: 0
   },
   {
     id: 54,
-    question: "The integrating factor for dy/dx + y tan x = x is:",
-    options: ["sec x", "sec² x", "tan x", "eˣ ᵗᵃⁿ ˣ"],
-    correct: 0
+    question: "Quantum computers are very good at dealing with_____",
+    options: ["Clarity", "Certainty", "Uncertainty", "Reliability"],
+    correct: 2
   },
   {
     id: 55,
-    question: "For Bernoulli DE dy/dx + P(x)y = Q(x)yⁿ, the linearizing variable is:",
-    options: ["y¹⁻ⁿ", "yⁿ⁻¹", "yⁿ", "y⁻ⁿ"],
-    correct: 0
-  },
-  {
-    id: 56,
-    question: "Which equation is exact?",
-    options: ["(y cos x)dx + (x sin y)dy = 0", "(2y)dx + (3x)dy = 0", "(x² - y)dx + (y²)dy = 0", "(eˣy)dx + (eˣ)dy = 0"],
+    question: "What does 'entanglement' mean?",
+    options: ["Two particles are different", "Two particles are separate", "Two particles are independent", "Two particles are connected"],
     correct: 3
   },
   {
+    id: 56,
+    question: "What can quantum computers be used for?",
+    options: ["Artificial Intelligence", "Simulations/Predictions", "Both (A) and (B)", "Google Docs and Slides"],
+    correct: 2
+  },
+  {
     id: 57,
-    question: "The differential equation (2xy)dx + (x² + 1)dy = 0 is exact because __________.",
-    options: ["∂M/∂y = 2x and ∂N/∂x = 2x", "∂M/∂x = ∂N/∂y", "∂M/∂x = 2y and ∂N/∂x = 1", "Both M(x, y) and N(x, y) are differentiable functions of x and y"],
+    question: "When the two members of a Qubit pair exist in a single quantum state, it is known as ____________.",
+    options: ["Entanglement", "Engagement", "Superposition", "None of the Above"],
     correct: 0
   },
   {
     id: 58,
-    question: "Which of the following function is the solution of the differential equation y' + y = 0.",
-    options: ["y = e²ˣ", "y = eˣ", "y = e⁻ˣ", "y = e⁻²ˣ"],
-    correct: 2
+    question: "Quantum computing is relatively _________ than classical computing.",
+    options: ["Faster", "Slower", "Average", "None of the Above"],
+    correct: 0
   },
   {
     id: 59,
-    question: "Which of the following function is not a solution of the differential equation y'' + y = 0?",
-    options: ["y = 15 cos x", "y = 2 sin x", "y = cos x", "y = sin 2x"],
+    question: "Qubit stands for ________",
+    options: ["Quality bits", "Question bit", "Quantum gates", "Quantum bit"],
     correct: 3
   },
   {
     id: 60,
-    question: "The complementary function of the differential equation (D - 3)²y = e³ˣ is:",
-    options: ["(C₁ + C₂)xe³ˣ", "(C₁ + C₂x)e³ˣ", "(C₁e³ˣ + C₂e⁻³ˣ)", "(C₁x + C₂x²)e³ˣ"],
+    question: "A qubit is a _______quantum-mechanical system.",
+    options: ["One-state", "Two-state", "Three-state", "Four-state"],
     correct: 1
   },
   {
     id: 61,
-    question: "The differential equation whose auxiliary equation has the roots 0, 1, -1 is:",
-    options: ["(D³ + 2D² + D)y = 0", "(D³ - D² - D)y = 0", "(D³ - 2D² - D)y = 0", "(D³ - D)y = 0"],
-    correct: 3
+    question: "The set of vectors and set of scalars which follow the same properties followed by linear vector space is said be",
+    options: ["Basis", "Dimension", "Hilbert space", "Orthogonal state"],
+    correct: 2
   },
   {
     id: 62,
-    question: "The differential equation whose auxiliary equation has the roots 1, -1 is:",
-    options: ["y'' - y = 0", "y'' + y = 0", "y' + y = 0", "y'' - y' - y = 0"],
-    correct: 0
+    question: "It is the process of replacing iᵗʰ row of the matrix by iᵗʰ column, then it is said to be",
+    options: ["Conjugate Matrix", "Transpose Matrix", "Identity Matrix", "Hermitian Operator"],
+    correct: 1
   },
   {
     id: 63,
-    question: "The particular integral of (D² + 3D - 4)y = 12e²ˣ is:",
-    options: ["e²ˣ", "2e²ˣ", "3e²ˣ", "e²ˣ/2"],
-    correct: 0
+    question: "The operators change with time while the state vectors remain constant, then it is said to be",
+    options: ["Schrodinger representation", "Heisenberg representation", "Interaction representation", "None of the above"],
+    correct: 1
   },
   {
     id: 64,
-    question: "y = C₁e⁻⁶ˣ + C₂e²ˣ is the general solution of the equation:",
-    options: ["y'' + 4y' - 12y = 0", "y'' + 4y' + 12y = 0", "y'' - 4y' + 12y = 0", "y'' - 4y' - 12y = 0"],
+    question: "The operators remain constant while the state vectors change with time, then it is said to be",
+    options: ["Schrodinger representation", "Heisenberg representation", "Interaction representation", "None of the above"],
     correct: 0
   },
   {
     id: 65,
-    question: "The integrating factor for the differential equation: dy/dx + y·(1/x) = log x is:",
-    options: ["log x", "x", "1/x", "x²"],
+    question: "The diagonal entries of a Hermitian matrix must be",
+    options: ["Complex conjugate", "Real", "Both real & Complex conjugate", "None of the above"],
     correct: 1
   },
   {
     id: 66,
-    question: "For the differential equation y'' - y = eˣ, choose y₁ = eˣ, y₂ = e⁻ˣ. Then the Wronskian W is:",
-    options: ["1", "0", "-2", "eˣ - e⁻ˣ"],
-    correct: 2
+    question: "The eigen value of a Hermitian matrix must be",
+    options: ["Complex conjugate", "Real", "Both real & Complex conjugate", "None of the above"],
+    correct: 1
   },
   {
     id: 67,
-    question: "The solution of y'' + y = 0 is:",
-    options: ["y = C₁eˣ + C₂e⁻ˣ", "y = C₁ cos x + C₂ sin x", "y = C₁x + C₂", "y = C₁eⁱˣ + C₂e⁻ⁱˣ"],
+    question: "What is a vector space?",
+    options: ["A space consisting of only vectors", "A set of vectors closed under addition and scalar multiplication", "A space that includes both vectors and scalars", "A space that is always three-dimensional"],
     correct: 1
   },
   {
     id: 68,
-    question: "The partial differential equation of the expression z = ax + by, where a and b are arbitrary constants, is:",
-    options: ["z = px - qy", "z = p + q", "z = pq", "z = px + qy"],
-    correct: 3
-  },
-  {
-    id: 69,
-    question: "Which of the following equations is a parabolic partial differential equation?",
-    options: ["∂²u/∂x² + ∂²u/∂y² = 0", "∂²u/∂x² + ∂²u/∂y² = f(x, y)", "a²(∂²u/∂x²) = ∂u/∂t", "∂²u/∂x² = 4(∂²u/∂t²)"],
+    question: "What is the dimension of a vector space?",
+    options: ["The size or length of a vector", "The number of vectors in the space", "The maximum number of linearly independent vectors that span the space", "The number of elements in the basis of the space"],
     correct: 2
   },
   {
+    id: 69,
+    question: "What is the span of a set of vectors?",
+    options: ["The set of all vectors in the vector space", "The linear combination of all vectors in the set", "The set of vectors that are orthogonal to the given set", "The set of vectors that are linearly independent"],
+    correct: 1
+  },
+  {
     id: 70,
-    question: "The partial differential equation of the expression 2z = ax² + by² where a and b are arbitrary constants, is:",
-    options: ["2z = px + qy", "z = p + q", "z = py + qx", "z = px - qy"],
-    correct: 0
+    question: "In a finite-dimensional vector space, what is the maximum number of linearly independent vectors a basis can have?",
+    options: ["0", "1", "The dimension of the vector space", "The size of the vector space"],
+    correct: 2
   },
   {
     id: 71,
-    question: "The following second order partial differential equation is: 2x(∂²u/∂x²) + 3x(∂²u/∂y²) = ∂u/∂x + ∂u/∂y",
-    options: ["parabolic", "hyperbolic", "elliptic", "circular"],
+    question: "Moore's Law originally stated that the number of transistors on a microchip would double approximately every:",
+    options: ["6 months", "1 year", "2 years", "5 years"],
     correct: 2
   },
   {
     id: 72,
-    question: "The partial differential equation of the expression z = f(x), where f(x) is an arbitrary function, is:",
-    options: ["z = ∂z/∂x", "∂z/∂y = 0", "∂z/∂x + ∂z/∂x = 0", "z = ∂z/∂y"],
-    correct: 1
+    question: "What fundamental technology trend enabled the continuation of Moore's Law for several decades?",
+    options: ["Miniaturization of transistors", "Increase in clock speed", "Expansion of data storage", "Advancements in software algorithms"],
+    correct: 0
   },
   {
     id: 73,
-    question: "The following second order partial differential equation is: x(∂²u/∂x²) - x²(∂u/∂x) + ∂u/∂y = 0",
-    options: ["parabolic", "hyperbolic", "elliptic", "circular"],
+    question: "Which component of a computer is primarily affected by Moore's Law?",
+    options: ["Central Processing Unit (CPU)", "Random Access Memory (RAM)", "Hard Disk Drive (HDD)", "Graphics Processing Unit (GPU)"],
     correct: 0
   },
   {
     id: 74,
-    question: "The partial differential equation of the expression z = f(x + y), where f(x + y) is an arbitrary function, is:",
-    options: ["p - q = 0", "p + q = 0", "z = p + q", "z = p - q"],
-    correct: 0
+    question: "What is one of the main factors contributing to the end of Moore's Law?",
+    options: ["Decreased demand for computing power", "Physical limits of miniaturization", "Lack of innovation in software development", "Increasing costs of semiconductor production"],
+    correct: 1
   },
   {
     id: 75,
-    question: "The following second order partial differential equation is: xy(∂²u/∂x∂y) - x²(∂u/∂x) + ∂u/∂y = cos(2x + 3y)",
-    options: ["parabolic", "hyperbolic", "elliptic", "circular"],
-    correct: 1
+    question: "Which alternative approaches are being explored to extend computing power beyond the limits of Moore's Law?",
+    options: ["Quantum computing", "Neuromorphic computing", "Optical computing", "All of these"],
+    correct: 3
   },
   {
     id: 76,
-    question: "The partial differential equation of the expression z = aeˣ - beʸ, where a and b are arbitrary constants, is:",
-    options: ["z = p + q", "z = p - q", "p + q = 0", "p - q = 0"],
-    correct: 3
-  },
-  {
-    id: 77,
-    question: "Which of the following equations is a hyperbolic partial differential equation?",
-    options: ["∂²u/∂x² + ∂²u/∂y² = 0", "∂²u/∂x² + ∂²u/∂y² = f(x, y)", "a²(∂²u/∂x²) = ∂u/∂t", "∂²u/∂x² = 4(∂²u/∂t²)"],
-    correct: 3
-  },
-  {
-    id: 78,
-    question: "The partial differential equation of the expression z = ax + beʸ, where a and b are arbitrary constants, is:",
-    options: ["z = p + q", "z = px + q", "z = p + qy", "z = p - q"],
-    correct: 1
-  },
-  {
-    id: 79,
-    question: "Which of the following partial differential equations is not an elliptic partial differential equation?",
-    options: ["∂²u/∂x² + ∂²u/∂y² = 0", "∂²u/∂x² + ∂²u/∂y² = f(x, y)", "a²(∂²u/∂x²) = ∂u/∂t", "x²(∂²u/∂x²) + 4y²(∂²u/∂t²) = 4xy"],
+    question: "What is the fundamental unit of information in quantum computing?",
+    options: ["Bit", "Byte", "Qubit", "Quantum gate"],
     correct: 2
   },
   {
+    id: 77,
+    question: "In classical computing, information is processed using bits. What are the two possible values for a classical bit?",
+    options: ["0 and 1", "True and False", "-1 and 1", "Red and Blue"],
+    correct: 0
+  },
+  {
+    id: 78,
+    question: "Which property allows qubits to represent multiple states simultaneously in quantum computing?",
+    options: ["Superposition", "Entanglement", "Interference", "Tunnelling"],
+    correct: 0
+  },
+  {
+    id: 79,
+    question: "In a CNOT gate, you create a(n) _____ with two qubits.",
+    options: ["Superposition", "Entangled state", "Bloch", "Hadamard"],
+    correct: 1
+  },
+  {
     id: 80,
-    question: "The partial differential equation of the expression z = xeᵃ - by, where a and b are arbitrary constants, is:",
-    options: ["z = px - qy", "z = px + qy", "z = p + q", "px + qy = 0"],
+    question: "In a quantum circuit, this gate is used to place a qubit into superposition.",
+    options: ["Hadamard", "X-gate", "Bloch", "CNOT"],
     correct: 0
   },
   {
     id: 81,
-    question: "The following second order partial differential equation is: y²(∂²u/∂x²) - 2xy(∂²u/∂x∂y) + x²(∂²u/∂y²) - x²(∂u/∂x) + ∂u/∂y = 0",
-    options: ["parabolic", "hyperbolic", "elliptic", "circular"],
-    correct: 0
+    question: "This quantum gate acts on a single qubit and would most be similar to a traditional NOT gate.",
+    options: ["CNOT", "X-Gate", "Hadamard", "Deutsch Gate"],
+    correct: 1
   },
   {
     id: 82,
-    question: "The partial differential equation of the expression z = eʸg(x), where g(x) an arbitrary function, is:",
-    options: ["z = ∂z/∂y", "z = ∂z/∂x", "∂z/∂x = 0", "∂z/∂y = 0"],
+    question: "What is superposition in quantum computing?",
+    options: ["A state in which a qubit can exist in multiple states simultaneously", "The process of entangling multiple qubits", "A gate used to manipulate qubits", "A unit of quantum information"],
     correct: 0
   },
   {
     id: 83,
-    question: "Which of the following equation is not a hyperbolic partial differential equation?",
-    options: ["-2(∂²u/∂x²) - x²(∂²u/∂y²) = 0", "∂²u/∂x² - ∂²u/∂y² = 0", "xy(∂²u/∂x²) - 3xy(∂²u/∂y²) = 0", "∂²u/∂x² - y²(∂²u/∂y²) = 0"],
-    correct: 0
+    question: "What happens to the entanglement of qubits when they are physically separated",
+    options: ["The entanglement is lost", "The entanglement remains intact", "The entanglement becomes stronger", "The entanglement becomes weaker"],
+    correct: 1
   },
   {
     id: 84,
-    question: "The partial differential equation of the expression 2z = ax² + by, where a and b are arbitrary constants, is:",
-    options: ["2z = px + 2qy", "z = px + qy", "z = 2px + qy", "z = px - qy"],
+    question: "What is the purpose of quantum gates in quantum computing?",
+    options: ["To entangle qubits", "To collapse superposition", "To manipulate qubits", "To measure qubit states"],
     correct: 2
   },
   {
     id: 85,
-    question: "The following second order partial differential equation is: y²(∂²u/∂x²) - 4xy(∂²u/∂x∂y) - 4x²(∂²u/∂y²) - sin²(xy) = 0",
-    options: ["parabolic", "hyperbolic", "elliptic", "circular"],
-    correct: 1
+    question: "Pauli's matrices are",
+    options: ["Unitary", "Reversible", "Both unitary and reversible", "None of the above"],
+    correct: 2
   },
   {
     id: 86,
-    question: "The partial differential equation of the expression z = ay + bx, where a and b are arbitrary constants, is:",
-    options: ["z = px + qy", "z = qx + py", "z = p + q", "z = px - qy"],
+    question: "If <0|0>=1 is called",
+    options: ["Normalized", "Orthogonal", "Hermitian", "Orthonormal"],
     correct: 1
   },
   {
     id: 87,
-    question: "Which of the following partial differential equation is an elliptic partial differential equation?",
-    options: ["-2(∂²u/∂x²) - x²(∂²u/∂y²) = 0", "∂²u/∂x² - ∂²u/∂y² = 0", "xy(∂²u/∂x²) - 3xy(∂²u/∂y²) = 0", "∂²u/∂x² - y²(∂²u/∂y²) = 0"],
+    question: "|0> and |1> are orthogonal if:",
+    options: ["They are perpendicular", "They are parallel", "Angle between them is 0", "Linearly independent"],
     correct: 0
   },
   {
     id: 88,
-    question: "f(x, y) = x² + xyz + z Find fₓ at (1,1,1)",
-    options: ["0", "1", "3", "-1"],
-    correct: 2
+    question: "In a linear vector space, linearly dependent and linearly independent vectors are",
+    options: ["If all the scalars are equal to 0 and some scalars are not equal to 0.", "If some scalars are not equal to 0 and all the scalars are equal to 0.", "Both the case scalars are equal to 0", "Both the case scalars are not equal to 0."],
+    correct: 1
   },
   {
     id: 89,
-    question: "f(x, y) = sin(xy) + x² ln(y) Find f_yx at (0, π/2)",
-    options: ["33", "0", "3", "1"],
-    correct: 3
-  },
-  {
-    id: 90,
-    question: "The one-dimensional wave equation is:",
-    options: ["∂u/∂t = c²(∂²u/∂x²)", "∂²u/∂t² = c²(∂²u/∂x²)", "∂²u/∂t² = ∂²u/∂x²", "∂u/∂t = ∂u/∂x"],
-    correct: 1
-  },
-  {
-    id: 91,
-    question: "Which of the following is the standard form of the Laplace equation in 2D?",
-    options: ["∂²u/∂x² + ∂²u/∂y² = 0", "∂u/∂x + ∂u/∂y = 0", "∂u/∂x = ∂u/∂y", "∂²u/∂x² - ∂²u/∂y² = 0"],
-    correct: 0
-  },
-  {
-    id: 92,
-    question: "Which type of PDE is the wave equation?",
-    options: ["Parabolic", "Elliptic", "Hyperbolic", "None of the above"],
+    question: "Advantage of qubit over bit is,",
+    options: ["It works in spin up state", "It works in spin down state", "It also works in super posed state", "All the above"],
     correct: 2
   },
   {
-    id: 93,
-    question: "The direct integration method is applicable when the PDE is:",
-    options: ["Linear and homogeneous", "Linear and first order", "Non-linear", "Of second order with constant coefficients"],
-    correct: 1
-  },
-  {
-    id: 94,
-    question: "Direct integration method solves PDEs by:",
-    options: ["Using Fourier series", "Directly integrating partial derivatives step by step", "Transforming to ODEs", "Using separation of variables"],
-    correct: 1
-  },
-
-  // UNIT-IV: Multiple Integrals
-  {
-    id: 95,
-    question: "The value of ∫₀¹ ∫₀ˣ dy dx is:",
-    options: ["1", "2", "0", "1/2"],
+    id: 90,
+    question: "Quantum gates are unitary in nature. Because of,",
+    options: ["Superposed state", "Spin up state", "Spin down state", "Normalization condition."],
     correct: 3
   },
   {
-    id: 96,
-    question: "The value of ∫₀¹ ∫₀^√x dy dx = ________________",
-    options: ["2/3", "3/2", "1/3", "3"],
+    id: 91,
+    question: "Which quantum gate work as flip flop gate?",
+    options: ["Z gate", "Y gate", "X gate", "None of the above."],
+    correct: 2
+  },
+  {
+    id: 92,
+    question: "Which quantum gate can take the qubit to super posed state?",
+    options: ["X gate", "Y gate", "Z gate", "Hadamard gate"],
+    correct: 3
+  },
+  {
+    id: 93,
+    question: "In |Ψ>= α|0>+ β|1>, α, β represents,",
+    options: ["Ground state and excited state", "Probability density", "Probability amplitude", "All the above"],
+    correct: 2
+  },
+  {
+    id: 94,
+    question: "In |Ψ>= α|0>+ β|1>, if α=1 then,",
+    options: ["Probability of finding the electron in the ground state is high", "Probability of finding the electron in the excited state is high", "Probability of finding the electron in the superposed state is high", "None of the above"],
     correct: 0
   },
   {
+    id: 95,
+    question: "In |Ψ>= α|0>+ β|1>, if β =1 then,",
+    options: ["Probability of finding the electron in the ground state is high", "Probability of finding the electron in the excited state is high", "Probability of finding the electron in the superposed state is high", "None of the above"],
+    correct: 1
+  },
+  {
+    id: 96,
+    question: "In |Ψ>= α|0>+ β|1>, if α and β = 1/√2 then,",
+    options: ["Probability of finding the electron in the ground state is high", "Probability of finding the electron in the excited state is high", "Probability of finding the electron in the superposed state is high", "None of the above"],
+    correct: 2
+  },
+
+  // Unit 3: Lasers & Optical Fibers
+  {
     id: 97,
-    question: "The value of ∫₀^(π/2) ∫₁² r dr dθ = ______________",
-    options: ["π/4", "π", "π/2", "3π/4"],
+    question: "Important characteristic of laser beam is",
+    options: ["Interference", "Diffraction", "Dispersion", "Coherence"],
     correct: 3
   },
   {
     id: 98,
-    question: "Which of the following formula can be used to find area of a plane region in the cartesian form?",
-    options: ["A = ∬ x dx dy", "A = ∬ xy dx dy", "A = ∬ f(x, y)dx dy", "A = ∬ dx dy"],
-    correct: 3
+    question: "Emission of a photon by an excited atom due to interaction with a passing photon nearby is called",
+    options: ["Spontaneous emission", "Induced absorption", "Stimulated emission", "Thermionic emission"],
+    correct: 2
   },
   {
     id: 99,
-    question: "The value of ∫₋₁¹ ∫₀¹ ∫₋₁⁰ dx dy dz =",
-    options: ["2", "0", "-1", "1"],
-    correct: 0
+    question: "Metastable states are",
+    options: ["Ground state energy states.", "Excited state energy levels in which electrons stay for very short interval of time.", "Excited state energy levels in which electron can stay for unusually long time.", "Nuclear energy states."],
+    correct: 2
   },
   {
     id: 100,
-    question: "∫₀¹ ∫₀^(x²) dy dx represents:",
-    options: ["The area bounded by the parabola y = x², the line x = 1 and the x-axis.", "The area bounded by the parabolas y = x² and y² = x.", "The area bounded by the parabola y = x², the line y = 1 and the y-axis.", "The area bounded by the parabola y = x², the line y = 1 and the x-axis"],
-    correct: 0
+    question: "The required condition to achieve laser action in a system is",
+    options: ["State of population inversion", "Excitation source", "A resonant cavity", "All the three"],
+    correct: 3
   },
   {
     id: 101,
-    question: "∫₀¹ ∫₀ˣ eʸ dy dx =",
-    options: ["e + 2", "e", "e - 2", "2e"],
-    correct: 2
+    question: "What is the need to achieve population inversion?",
+    options: ["To excite most of the atoms", "To bring most of the atoms to ground state", "To achieve stable condition", "To reduce the time of production of laser"],
+    correct: 0
   },
   {
     id: 102,
-    question: "The value of ∫₀ᶜ ∫₀ᵇ ∫₀ᵃ dz dy dx is:",
-    options: ["ab/c", "ab/(2c)", "abc", "ab"],
-    correct: 2
+    question: "In a laser, the mirrors are there on either side of the device",
+    options: ["In order to filter the heat & leave out only the light.", "To protect the eyes of the observer.", "To save energy of the excitation source.", "So that same photons continue to cause further batches of stimulated transitions."],
+    correct: 3
   },
   {
     id: 103,
-    question: "Area of a region R in terms of polar co-ordinate is:",
-    options: ["A = ∬ᴿ r dr dθ", "A = ∬ᴿ dr dθ", "A = ∬ᴿ r² dr dθ", "A = ∬ᴿ (r + 1) dr dθ"],
-    correct: 0
+    question: "Nd:YAG laser is a",
+    options: ["Two level laser", "Three level laser", "Four level laser", "Five level laser"],
+    correct: 2
   },
   {
     id: 104,
-    question: "The value of ∫₀¹ ∫₀² xy dx dy is:",
-    options: ["2", "4", "0", "1"],
-    correct: 3
+    question: "In He-Ne laser, the ratio of He to Ne gas molecules is of the order",
+    options: ["1:10", "1:1", "10:1", "100:1"],
+    correct: 2
   },
   {
     id: 105,
-    question: "After changing the order of integration, the integral value of ∫₀^∞ ∫ₓ^∞ (e⁻ʸ/y) dy dx is same as:",
-    options: ["∫₀^∞ ∫₀ʸ (e⁻ʸ/y) dx dy", "∫₀^∞ ∫₀^∞ (e⁻ʸ/y) dx dy", "∫₀ˣ ∫₀ʸ (e⁻ʸ/y) dx dy", "∫₀¹ ∫ₓ^∞ (e⁻ʸ/y) dx dy"],
-    correct: 0
-  },
-  {
-    id: 106,
-    question: "In polar form, the integral ∫₀^∞ ∫₀^∞ e⁻⁽ˣ²⁺ʸ²⁾ dx dy is equal to:",
-    options: ["∫₀^(π/2) ∫₀^∞ e⁻ʳ² dr dθ", "∫₀^(π/2) ∫₀^∞ e⁻ʳ dr dθ", "∫₀^(π/2) ∫₀^∞ e⁻⁽ʳ²⁺θ²⁾ dr dθ", "∫₀^(π/2) ∫₀^∞ re⁻ʳ² dr dθ"],
-    correct: 3
-  },
-  {
-    id: 107,
-    question: "The value of γ(1/2) =",
-    options: ["√π/2", "√π", "√π/2", "π/2"],
+    question: "The pumping sourse in Nd:YAG laser is",
+    options: ["Chemical", "Optical", "Electrical", "Mechanical"],
     correct: 1
   },
   {
-    id: 108,
-    question: "Which of the following is true?",
-    options: ["γ(n + 1) = nγ(n)", "γ(n - 1) = nγ(n)", "γ(n + 1) = n + 2γ(n)", "γ(n + 2) = nγ(n)"],
+    id: 106,
+    question: "Which color of light has the shortest wavelength ?",
+    options: ["Yellow", "Blue", "Red", "Green"],
+    correct: 1
+  },
+  {
+    id: 107,
+    question: "Laser action is found in _________ semiconductor.",
+    options: ["direct band gap", "indirect band gap", "germanium", "silicon"],
     correct: 0
   },
   {
+    id: 108,
+    question: "The light from a laser source is monochromatic because all the photons",
+    options: ["are in phase", "have same energy", "have same amplitude", "are in the same direction"],
+    correct: 1
+  },
+  {
     id: 109,
-    question: "The value of ∫₀^(π/2) sin³x cos⁴x dx is:",
-    options: ["3π/280", "2/3", "2/35", "35/2"],
+    question: "Which one of the following statements best describes stimulated emission in a laser?",
+    options: ["Electrons collide with atoms in a metastable state and cause photons to be emitted.", "Atoms in a metastable state de-excite and cause electrons to be emitted.", "Photons interact with atoms in a metastable state and cause photons to be emitted.", "Photons interact with atoms in a metastable state and cause electrons to be emitted."],
     correct: 2
   },
   {
     id: 110,
-    question: "The value of β(3, 2) is:",
-    options: ["1/12", "1/2", "1/10", "1/24"],
+    question: "Which of the following is an example of optical pumping?",
+    options: ["Nd:YAG", "Helium-Neon laser", "Semiconductor laser", "Dye laser"],
     correct: 0
   },
   {
     id: 111,
-    question: "For any m > 0, β(m, 1) =",
-    options: ["1", "m", "0", "1/m"],
+    question: "Why is laser light monochromatic?",
+    options: ["The excited electrons are in a metastable state.", "The system is in a state of population inversion.", "The emitted photon and incident photon are of the same phase.", "Photons of the same energy as that of the incident photons are emitted when the electrons transit down from a higher energy level."],
     correct: 3
   },
   {
     id: 112,
-    question: "If m, n > 0 then β(m,n+1)/β(m+1,n) equals:",
-    options: ["m/n", "n/m", "1", "0"],
-    correct: 1
+    question: "Which of the following statements concerning a laser system is incorrect?",
+    options: ["Spontaneous emission occurs in the laser system.", "The intensity of the laser beam can be varied by changing the reflective coefficient of the partially reflecting mirror.", "The laser system does not require an external energy source.", "The laser medium consists of a metastable state."],
+    correct: 2
   },
   {
     id: 113,
-    question: "The value β(1/2, 1/2) is:",
-    options: ["1", "π", "-1", "√π"],
-    correct: 1
+    question: "The active medium in Nd:YAG laser is",
+    options: ["Neodymium", "YAG crystal", "Yttrium", "Aluminium"],
+    correct: 0
   },
   {
     id: 114,
-    question: "The value of ∫₀^∞ e⁻ˣ² dx is:",
-    options: ["√π", "√π/2", "√π/2", "π/2"],
+    question: "The number of atoms in the excited state becomes much greater than the number of atoms in the ground state. This is known as",
+    options: ["normal population", "population inversion", "stimulated emission", "spontaneous emission"],
     correct: 1
+  },
+  {
+    id: 115,
+    question: "Laser light is intense because",
+    options: ["it has very less number of Photons that in phase", "it has very less number of Photons that are not in phase", "it has very large number of Photons that are in phase", "it has very large number of Photons that are not in phase"],
+    correct: 2
+  },
+  {
+    id: 116,
+    question: "The emission of photon without being aided by any external agency is called",
+    options: ["light amplification", "induced absorption", "stimulated emission", "spontaneous emission"],
+    correct: 3
+  },
+  {
+    id: 117,
+    question: "The lifetime of an atom at the ordinary excited state is of the order of",
+    options: ["few millisecond", "few nanosecond", "few microsecond", "unlimited"],
+    correct: 1
+  },
+  {
+    id: 118,
+    question: "The lifetime of an atom in a metastable state is of the order of",
+    options: ["a few second", "Unlimited", "A nanosecond", "Few millisecond"],
+    correct: 3
+  },
+  {
+    id: 119,
+    question: "Supply of energy to atoms for excitation is called",
+    options: ["Glowing", "Bombarding", "Incidenting", "Pumping"],
+    correct: 3
+  },
+  {
+    id: 120,
+    question: "In a semiconductor laser there are no mirrors used because",
+    options: ["the laser light required is of low power", "mere driving a minimum current in the diode is enough for laser action", "p-section acts as one mirror and n-section acts as the other mirror", "a pair of parallel planes cleaved or polished at a particular angle in the crystal reflect the light efficiently"],
+    correct: 3
+  },
+  {
+    id: 121,
+    question: "A semiconductor laser has a peak emission radiation of wavelength 1.24 μm. What is its band gap value in eV?",
+    options: ["1.4 eV", "1.6 eV", "1 eV", "1.8 eV"],
+    correct: 2
+  },
+  {
+    id: 122,
+    question: "A He-Ne laser emits light at a wavelength of 632.8 nm and has an output power of 5 mW. The number of photons emitted in each second by this laser are",
+    options: ["1.79 x 10¹⁸ Photons/sec", "1.59 x 10¹⁶ Photons/sec", "0.6 x 10¹⁶ photons/sec", "1.59 x 10¹⁸ photons/sec"],
+    correct: 1
+  },
+  {
+    id: 123,
+    question: "If the wavelength of light emitted by spontaneous emission is 696 nm at 300K, the ratio of population of two energy levels is",
+    options: ["1.059 x 10⁻³²", "1.059 x 10⁻³³", "0.059 x 10⁻³⁰", "1.059 x 10⁻³⁰"],
+    correct: 3
+  },
+  {
+    id: 124,
+    question: "If a pulsed laser emits photons of wavelength 780 nm with 20 mW average power/pulse, the number of photons contained in each pulse if the pulse duration is 10 ns is",
+    options: ["7.86 x 10⁸", "5.08 x 10⁸", "3.86 x 10⁸", "1.86 x 10⁸"],
+    correct: 0
+  },
+  {
+    id: 125,
+    question: "The wavelength of radiation emitted by a semiconducting laser with band gap energy 2.8eV.",
+    options: ["2.8 Å", "4.3308 Å", "5548.4 Å", "4430.8 Å"],
+    correct: 3
+  },
+  {
+    id: 126,
+    question: "Numerical aperture of an optical fiber depends on",
+    options: ["Diameter of the fiber", "Acceptance angle", "Critical angle", "Refractive index of core"],
+    correct: 1
+  },
+  {
+    id: 127,
+    question: "Optical fiber works on the phenomenon of _______",
+    options: ["total internal reflection", "polarization", "diffraction", "refraction"],
+    correct: 0
+  },
+  {
+    id: 128,
+    question: "What is the other name for a maximum external incident angle?",
+    options: ["Optical angle", "Total internal reflection angle", "Refraction angle", "Wave guide acceptance angle"],
+    correct: 3
+  },
+  {
+    id: 129,
+    question: "How does the refractive index vary in Graded Index fibre?",
+    options: ["Tangentially", "Radially", "Longitudinally", "Transversely"],
+    correct: 1
+  },
+  {
+    id: 130,
+    question: "Which of the following has more distortion?",
+    options: ["Single step-index fibre", "Graded index fibre", "Multimode step-index fibre", "Glass fibre"],
+    correct: 2
+  },
+  {
+    id: 131,
+    question: "What causes microscopic bend?",
+    options: ["Uniform pressure", "Non-uniform volume", "Uniform volume", "Non-uniform pressure"],
+    correct: 3
+  },
+  {
+    id: 132,
+    question: "The loss in signal power as light travels down a fiber is called",
+    options: ["Dispersion", "Scattering", "Absorption", "Attenuation"],
+    correct: 3
+  },
+  {
+    id: 133,
+    question: "The inner portion of the optical fiber cable is called",
+    options: ["Cladding", "Coating", "Inner conductor", "Core"],
+    correct: 3
+  },
+  {
+    id: 134,
+    question: "When more than one mode is propagating, how is it dispersed?",
+    options: ["Dispersion", "Inter-modal dispersion", "Material dispersion", "Waveguide dispersion"],
+    correct: 1
+  },
+  {
+    id: 135,
+    question: "The core of an optical fiber has a",
+    options: ["Lower refracted index than air", "Lower refractive index than the cladding", "Higher refractive index than the cladding", "Similar refractive index with the cladding"],
+    correct: 2
+  },
+  {
+    id: 136,
+    question: "Having cladding around the core is preferred to coating the core with a reflecting material(silvering) because",
+    options: ["Silvering is not economical", "Coating may get affected by abrasions", "Coated material may undergo chemical changes in the field conditions and thus become dull", "The total internal reflection at the core-cladding interface is superior to the one by any coated material"],
+    correct: 3
+  },
+  {
+    id: 137,
+    question: "Attenuation means",
+    options: ["Amplification of signal strength", "Division of signal strength", "Loss of signal strength", "Tuning of signal"],
+    correct: 2
+  },
+  {
+    id: 138,
+    question: "In an optical fiber the signal loss due to scattering is mainly due to",
+    options: ["Rayleigh scattering", "Raman scattering", "Wein's scattering", "All the answers"],
+    correct: 0
+  },
+  {
+    id: 139,
+    question: "In an optical fiber, Rayleigh scattering occurs when a photon",
+    options: ["Encounters an impurity atom in its path", "Hits the cladding", "Encounters sharp changes in refractive index over distances smaller than its wavelength", "Encounters a microscopic bend"],
+    correct: 2
+  },
+  {
+    id: 140,
+    question: "Signal distortion occurs due to",
+    options: ["Irregularities in fiber structure", "Variation in refractive index of the core at different points", "Spreading of pulse", "Macroscopic bend"],
+    correct: 2
+  },
+  {
+    id: 141,
+    question: "The numerical aperture of an optical fiber in air is 0.32. The numerical aperture of an optical fiber in water of R.I. 1.33 is",
+    options: ["0.43", "0.24", "0.64", "0.96"],
+    correct: 1
+  },
+  {
+    id: 142,
+    question: "The numerical aperture of a fiber if the angle of acceptance is 15 degrees, is",
+    options: ["0.17", "0.26", "0.50", "0.75"],
+    correct: 1
+  },
+  {
+    id: 143,
+    question: "Fractional index change for an optical fiber with core and cladding of refractive indices 1.563 and 1.498 respectively is",
+    options: ["0.00415", "0.04159", "0.04300", "0.00400"],
+    correct: 1
+  },
+  {
+    id: 144,
+    question: "The angle of acceptance of an optical fiber with numerical aperture of 0.446 is",
+    options: ["26.49°", "7.78°", "20.5°", "30.6°"],
+    correct: 0
+  },
+  {
+    id: 145,
+    question: "An optical signal loses 15% of its power after traversing a fiber length of 400 m. The fiber loss is",
+    options: ["0.0176", "1.7645", "17.645", "0.1764"],
+    correct: 1
+  },
+  {
+    id: 146,
+    question: "The attenuation in an optical fiber of length 500 m, when a light signal of power 100 mW emerges out of the fiber with a power of 90 mW is",
+    options: ["0.0915 dB/km", "0.00915dB/km", "9.15 dB/km", "0.915 dB/km"],
+    correct: 3
+  },
+  {
+    id: 147,
+    question: "Optical fibers are used in",
+    options: ["CAT scans", "X-ray photos", "Ultrasound scans", "Endoscopy"],
+    correct: 3
+  },
+  {
+    id: 148,
+    question: "Which fiber is preferred for long distance communication?",
+    options: ["Step index single mode fiber", "Graded index multimode fiber", "Step index multimode fiber", "Graded index fiber"],
+    correct: 0
+  },
+  {
+    id: 149,
+    question: "In the structure of the fiber optic cable, the refractive index of the core is always ____ the refractive index of the cladding",
+    options: ["Less than", "Equal to", "Greater than", "None of these"],
+    correct: 2
+  },
+  {
+    id: 150,
+    question: "The numerical aperture (NA) in optical fiber is used to describe",
+    options: ["Light spreading ability", "Light gathering or light-collecting ability", "Light output from an external shield", "Light leakage ability"],
+    correct: 1
+  },
+  {
+    id: 151,
+    question: "The refractive index of the core is uniform throughout and undergoes an abrupt change at the cladding boundary which is known as______",
+    options: ["Uniform-index fiber", "Scale-index fiber", "Graded-index fiber", "Step index fiber"],
+    correct: 3
   }
 ];
 
@@ -1094,9 +1314,9 @@ class MATHSQuizApp {
 
     saveResult(result) {
         try {
-            let results = JSON.parse(localStorage.getItem('MathsQuizResults') || '[]');
+            let results = JSON.parse(localStorage.getItem('PhysicsQuizResults') || '[]');
             results.push(result);
-            localStorage.setItem('MathsQuizResults', JSON.stringify(results));
+            localStorage.setItem('PhysicsQuizResults', JSON.stringify(results));
         } catch (error) {
             console.error('Error saving result:', error);
         }
@@ -1141,7 +1361,7 @@ class MATHSQuizApp {
 
     showAdminDashboard() {
         try {
-            const results = JSON.parse(localStorage.getItem('MathsQuizResults') || '[]');
+            const results = JSON.parse(localStorage.getItem('PhysicsQuizResults') || '[]');
             
             const elements = {
                 totalStudents: document.getElementById('totalStudents'),
@@ -1195,7 +1415,7 @@ class MATHSQuizApp {
 
     exportCSV() {
         try {
-            const results = JSON.parse(localStorage.getItem('MathsQuizResults') || '[]');
+            const results = JSON.parse(localStorage.getItem('PhysicsQuizResults') || '[]');
             
             if (results.length === 0) {
                 alert('No data to export.');
@@ -1220,7 +1440,7 @@ class MATHSQuizApp {
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `Maths_quiz_results_${new Date().toISOString().split('T')[0]}.csv`;
+            a.download = `Physics_quiz_results_${new Date().toISOString().split('T')[0]}.csv`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -1244,5 +1464,5 @@ class MATHSQuizApp {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new MATHSQuizApp();
+    new PHYQuizApp();
 });
