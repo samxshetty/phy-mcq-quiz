@@ -4,13 +4,13 @@ class PHYQuizApp {
  {
     id: 1,
     question: "An experimental evidence for matter waves is",
-    options: ["photoelectric effect", "compton effect", "electron diffraction", "interference of light"],
+    options: ["photoelectric effect", "Compton effect", "electron diffraction", "interference of light"],
     correct: 2
   },
   {
     id: 2,
     question: "A wave packet is used to represent",
-    options: ["A light wave", "a stationary wave", "Matter wave", "a transverse wave"],
+    options: ["A light wave", "A stationary wave", "Matter wave", "A transverse wave"],
     correct: 2
   },
   {
@@ -51,13 +51,13 @@ class PHYQuizApp {
   },
   {
     id: 9,
-    question: "de Broglie wave length of a body of mass m and kinetic energy E is given by:",
+    question: "de Broglie wavelength of a body of mass m and kinetic energy E is given by:",
     options: ["λ = / h", "λ = h / meV", "λ = h / √(2mE)", "λ = h/2meV"],
     correct: 2
   },
   {
     id: 10,
-    question: "If the energy of a particle is reduced to one-fourth then the percentage increase in the de-broglie wavelength is",
+    question: "If the energy of a particle is reduced to one-fourth then the percentage increase in the de-Broglie wavelength is",
     options: ["41%", "100%", "144%", "70%"],
     correct: 1
   },
@@ -207,20 +207,20 @@ class PHYQuizApp {
   },
   {
     id: 35,
-    question: "According to Max Born's interpretation, represents",
+    question: "According to Max Born's interpretation, |ψ|² represents",
     options: ["energy density", "particle density", "probability density", "charge density"],
     correct: 2
   },
   {
     id: 36,
-    question: "In a one dimensional infinite potential well, energy of the particle En =",
+    question: "In a one-dimensional infinite potential well, energy of the particle En =",
     options: ["n²h²/8mL²", "n²ħ²/8mL²", "n²h²/2mL²", "n²h²/4mL²"],
     correct: 0
   },
   {
     id: 37,
     question: "The energy corresponding to the lowest permitted energy level for a particle in an infinite potential well is called",
-    options: ["Excited energy", "Zero point energy", "Metastable state energy", "None of these"],
+    options: ["Excited energy", "Zero-point energy", "Metastable state energy", "None of these"],
     correct: 1
   },
   {
@@ -302,7 +302,7 @@ class PHYQuizApp {
     correct: 2
   },
 
-  // Unit 2: Quantum Computing
+  // Unit II: Quantum Computing
   {
     id: 51,
     question: "In quantum computing, what is the basic unit of information?",
@@ -371,7 +371,7 @@ class PHYQuizApp {
   },
   {
     id: 62,
-    question: "It is the process of replacing iᵗʰ row of the matrix by iᵗʰ column, then it is said to be",
+    question: "The process of replacing iᵗʰ row of the matrix by iᵗʰ column, is said to be",
     options: ["Conjugate Matrix", "Transpose Matrix", "Identity Matrix", "Hermitian Operator"],
     correct: 1
   },
@@ -507,410 +507,960 @@ class PHYQuizApp {
     options: ["To entangle qubits", "To collapse superposition", "To manipulate qubits", "To measure qubit states"],
     correct: 2
   },
+
+  // Unit III: Conductors and Superconductors
   {
     id: 85,
-    question: "Pauli's matrices are",
-    options: ["Unitary", "Reversible", "Both unitary and reversible", "None of the above"],
+    question: "Which of the following statement correctly describes a metal based on band theory?",
+    options: ["A material possessing moderate band gap", "A material possessing a large band gap", "A material with zero band gap", "A material with infinite band gap"],
     correct: 2
   },
   {
     id: 86,
-    question: "If <0|0>=1 is called",
-    options: ["Normalized", "Orthogonal", "Hermitian", "Orthonormal"],
-    correct: 1
-  },
-  {
-    id: 87,
-    question: "|0> and |1> are orthogonal if:",
-    options: ["They are perpendicular", "They are parallel", "Angle between them is 0", "Linearly independent"],
+    question: "Solids with high value of conductivity are called:",
+    options: ["Conductors", "Non-metal", "Insulator", "Semi-conductor"],
     correct: 0
   },
   {
-    id: 88,
-    question: "In a linear vector space, linearly dependent and linearly independent vectors are",
-    options: ["If all the scalars are equal to 0 and some scalars are not equal to 0.", "If some scalars are not equal to 0 and all the scalars are equal to 0.", "Both the case scalars are equal to 0", "Both the case scalars are not equal to 0."],
+    id: 87,
+    question: "The electrons in valence band are",
+    options: ["Freely moving inside the solid", "Tightly bonded inside the solid", "Lies in the innermost orbits and cannot be made free", "Lies in the outermost orbits and cannot be made free"],
     correct: 1
   },
   {
+    id: 88,
+    question: "Fermi level for a metal is",
+    options: ["Highest energy level occupied by electrons at 0°C", "Average value of all available energy levels", "Highest energy level occupied by electrons at 0 K", "Addition of energy of all available electron energy levels"],
+    correct: 2
+  },
+  {
     id: 89,
-    question: "Advantage of qubit over bit is,",
-    options: ["It works in spin up state", "It works in spin down state", "It also works in super posed state", "All the above"],
+    question: "The free electron theory could not explain which of the following properties?",
+    options: ["Electrical and thermal conductivity of metals", "Thermal and thermal conductivity of non-metal", "Ferromagnetism", "Ohm's law"],
     correct: 2
   },
   {
     id: 90,
-    question: "Quantum gates are unitary in nature. Because of,",
-    options: ["Superposed state", "Spin up state", "Spin down state", "Normalization condition."],
-    correct: 3
+    question: "Free electron theory is based on which of the following assumption?",
+    options: ["Electrons are freely moving only at the center of the solid", "Electrons are freely moving through the entire solid", "Electrons can move freely only at the top surface of the solid", "Electrons can move freely only at the bottom surface of the solid"],
+    correct: 1
   },
   {
     id: 91,
-    question: "Which quantum gate work as flip flop gate?",
-    options: ["Z gate", "Y gate", "X gate", "None of the above."],
-    correct: 2
+    question: "Which statement is correct regarding the influence of temperature on conductivity?",
+    options: ["Conductivity of metals increases with increase in temperature", "Conductivity of metals decreases with increase in temperature", "Conductivity of metals does not change with temperature", "Conductivity of metals increases with square root of temperature"],
+    correct: 1
   },
   {
     id: 92,
-    question: "Which quantum gate can take the qubit to super posed state?",
-    options: ["X gate", "Y gate", "Z gate", "Hadamard gate"],
-    correct: 3
-  },
-  {
-    id: 93,
-    question: "In |Ψ>= α|0>+ β|1>, α, β represents,",
-    options: ["Ground state and excited state", "Probability density", "Probability amplitude", "All the above"],
+    question: "Mobility of electron is",
+    options: ["Average flow of electrons per unit electric field.", "Average applied field per unit drift velocity.", "Average drift velocity per unit electric field.", "Reciprocal of conductivity per unit charge."],
     correct: 2
   },
   {
+    id: 93,
+    question: "Flow of electrons is affected by the following",
+    options: ["Thermal vibrations", "Impurity atoms", "Crystal defects", "All the answers"],
+    correct: 3
+  },
+  {
     id: 94,
-    question: "In |Ψ>= α|0>+ β|1>, if α=1 then,",
-    options: ["Probability of finding the electron in the ground state is high", "Probability of finding the electron in the excited state is high", "Probability of finding the electron in the superposed state is high", "None of the above"],
+    question: "Using the classical theory it can be shown that the electrical resistivity ρ and temperature T is given by,",
+    options: ["ρ α T", "ρ α T⁻¹", "ρ α T¹/³", "ρ α T²"],
     correct: 0
   },
   {
     id: 95,
-    question: "In |Ψ>= α|0>+ β|1>, if β =1 then,",
-    options: ["Probability of finding the electron in the ground state is high", "Probability of finding the electron in the excited state is high", "Probability of finding the electron in the superposed state is high", "None of the above"],
-    correct: 1
+    question: "Matthiessens rule may be written as ρTot = ρphon +ρo, which of the following statement(s) is/are true? a. ρphon is temperature dependent b. ρo is temperature dependent c. ρo is due to lattice vibrations",
+    options: ["(a) only", "(a) and (b)", "(b) only", "(c) only"],
+    correct: 0
   },
   {
     id: 96,
-    question: "In |Ψ>= α|0>+ β|1>, if α and β = 1/√2 then,",
-    options: ["Probability of finding the electron in the ground state is high", "Probability of finding the electron in the excited state is high", "Probability of finding the electron in the superposed state is high", "None of the above"],
+    question: "Relaxation time may be defined as the time taken by an electron to reduce its velocity to_____ its initial value.",
+    options: ["1/2", "1/3", "1/e", "1/2e"],
+    correct: 2
+  },
+  {
+    id: 97,
+    question: "The average distance travelled by a free electron between two successive collisions with lattice ions of a metallic crystal is called",
+    options: ["mean free path", "free path", "drift velocity", "mean collision time"],
+    correct: 0
+  },
+  {
+    id: 98,
+    question: "According to Pauli's exclusion principle, an energy level can accommodate not more than_____ electrons.",
+    options: ["one", "two", "three", "four"],
+    correct: 1
+  },
+  {
+    id: 99,
+    question: "The probability of occupation of the electrons at any temperature is given as,",
+    options: ["Option (i)", "Option (ii)", "Option (iii)", "Option (iv)"],
+    correct: 2
+  },
+  {
+    id: 100,
+    question: "The relationship between current density J and electric field E is",
+    options: ["J = σE", "J = σ / E", "J = σ/2E", "J = 1/ σ E"],
+    correct: 0
+  },
+  {
+    id: 101,
+    question: "The drift velocity is described as",
+    options: ["vd = eEτ/m", "vd = Eτ/m", "vd = eτ/m", "vd = eE/n"],
+    correct: 0
+  },
+  {
+    id: 102,
+    question: "Which one is correct about classical free electron theory:",
+    options: ["Free electrons are responsible for the electrical conductivity of metal", "Semiconductors can be explained properly", "Insulators can be explained properly", "Ohm's law cannot be derived using free electron theory"],
+    correct: 0
+  },
+  {
+    id: 103,
+    question: "According to free electron theory",
+    options: ["Valence electrons are tightly bound with the atom", "Valence electrons are weakly bound with the atom", "There are no free electrons in metal", "Some valence electrons are weakly bound and some tightly bound"],
+    correct: 1
+  },
+  {
+    id: 104,
+    question: "Which one is correct about free electrons",
+    options: ["valence electrons of metals move throughout the material.", "valence electrons of metals do not move throughout the material", "bound electrons of metals move throughout the material", "All electrons of metals move throughout the material"],
+    correct: 0
+  },
+  {
+    id: 105,
+    question: "Electrons in conductors will follow",
+    options: ["Bose-Einstein distribution", "Fermi-Dirac distribution", "Maxwell-Boltzmann distribution", "Boltzmann distribution"],
+    correct: 1
+  },
+  {
+    id: 106,
+    question: "Which one will be correct about resistance in metal",
+    options: ["Scattering of free electrons in a metal by structural defects and lattice vibrations", "Scattering of free electrons in a metal only by lattice vibrations", "Scattering of free electrons in a metal only by structural defects", "Scattering of free electrons in a metal by bound electrons"],
+    correct: 0
+  },
+  {
+    id: 107,
+    question: "Which of the following about Fermi-Dirac distribution is false?",
+    options: ["When E = EF, the probability of finding an electron with energy equal to the Fermi energy in a metal is ½ at any temperature.", "At T = 0 K all the energy level up to EF are occupied and all the energy levels above EF are empty.", "When T > 0 K, some levels above EF are partially filled while some levels below EF are partially empty.", "When T = 0 K, some levels above EF are partially filled while some levels below EF are empty."],
+    correct: 3
+  },
+  {
+    id: 108,
+    question: "Examples of Fermions are",
+    options: ["Electrons", "Photons", "Phonons", "Atoms"],
+    correct: 0
+  },
+  {
+    id: 109,
+    question: "Which of the following assumptions of the quantum free electron theory is/are true. a) The energy values of the conduction electrons are quantized. b) The distribution of electrons in the various allowed energy levels occur as per Pauli's exclusion principle. c) The electrons travel with a constant potential inside the metal but confined within its boundaries.",
+    options: ["(a) only", "(b) only", "(a) and (c)", "(a), (b) and (c)"],
+    correct: 3
+  },
+  {
+    id: 110,
+    question: "According to quantum theory, the electrical conductivity of a metal is due to those free electrons which are",
+    options: ["very close to Fermi level", "much below the Fermi level", "valence band", "None of the answers"],
+    correct: 0
+  },
+  {
+    id: 111,
+    question: "The mobility of electrons in copper is 3.5 × 10⁻³ m²V⁻¹s⁻¹. For an applied electric field strength of 2 V/m, the drift velocity of the free electrons is",
+    options: ["0.7 × 10⁻³ m/s", "7 × 10⁻³ m/s", "1.75 × 10⁻³ m/s", "7 × 10³ m/s"],
+    correct: 1
+  },
+  {
+    id: 112,
+    question: "The mobility of electrons in copper 3×10³ m²V⁻¹s⁻¹ assuming e =1.6×10⁻¹⁹ C and me = 9.1×10⁻³¹ kg. the mean collision time is",
+    options: ["16.2 × 10⁻¹³ s", "1.7 × 10⁻¹⁵ s", "1.8 × 10⁻¹⁵ s", "17.06 × 10⁻¹⁵ s"],
+    correct: 3
+  },
+  {
+    id: 113,
+    question: "Using Fermi distribution function, the value of f(E) for (E – EF) = 0.01 eV at 200 K is",
+    options: ["0.36", "0.64", "0.45", "0.55"],
+    correct: 0
+  },
+  {
+    id: 114,
+    question: "A uniform silver wire has a resistivity of 1.54×10⁻⁸ Ωm at room temperature. For an electric field along the wire of 1 Vcm⁻¹, calculate (a) average drift velocity of electron and (b) mobility.",
+    options: ["(a) 0.3 m/s and (b) 10.0 × 10⁻³ m²/Vs", "(a) 0.7 cm/s and (b) 70.0 × 10⁻³ m²/Vs", "(a) 3.0 m/s and (b) 17 × 10⁻³ m²/Vs", "(a) 0.7 m/s and (b) 7.0 × 10⁻³ m²/Vs"],
+    correct: 3
+  },
+  {
+    id: 115,
+    question: "The magnetic lines of force cannot penetrate the body of a superconductor, a phenomenon is known as",
+    options: ["Isotopic effect", "BCS theory", "Meissner effect", "Silsbee's effect"],
+    correct: 2
+  },
+  {
+    id: 116,
+    question: "The minimum amount of current passed through the body of superconductor in order to destroy the superconductivity is called",
+    options: ["Induced current", "Critical current", "Eddy current", "Hall current"],
+    correct: 1
+  },
+  {
+    id: 117,
+    question: "In superconductivity the conductivity of a material becomes",
+    options: ["Zero", "Finite", "Infinite", "None of the answers"],
+    correct: 2
+  },
+  {
+    id: 118,
+    question: "In superconductors the temperature at which conductivity of a material becomes infinite is called",
+    options: ["Critical temperature", "Absolute temperature", "Mean temperature", "Crystallization temperature"],
+    correct: 0
+  },
+  {
+    id: 119,
+    question: "The superconducting state is perfectly _____ in nature.",
+    options: ["Diamagnetic", "Paramagnetic", "Ferromagnetic", "Ferrimagnetic"],
+    correct: 0
+  },
+  {
+    id: 120,
+    question: "The binding energy of a Cooper pair is of the order of _______",
+    options: ["10⁻³ eV", "10³ eV", "10⁻³ J", "10³ J"],
+    correct: 0
+  },
+  {
+    id: 121,
+    question: "The electron pairs in a superconductor are ______",
+    options: ["Bosons", "Leptons", "Hydrons", "Fermions"],
+    correct: 0
+  },
+  {
+    id: 122,
+    question: "The transition to normal state occurs abruptly at a critical magnetic field (Hc) in",
+    options: ["Type-I superconductor", "Type-II superconductor", "Both Type-I and Type-II superconductors", "Conductors"],
+    correct: 0
+  },
+  {
+    id: 123,
+    question: "The magnetic susceptibility (χ) in superconductor is",
+    options: ["positive", "zero", "negative", "infinity"],
+    correct: 2
+  },
+  {
+    id: 124,
+    question: "Hard superconductors are also called as __________",
+    options: ["Type-I superconductor", "Type-II superconductor", "Both Type-I and Type-II superconductors", "Conductors"],
+    correct: 1
+  },
+  {
+    id: 125,
+    question: "Silsbee's rule gives the relation between",
+    options: ["current and critical temperature", "current and critical magnetic field", "current and isotopic mass", "critical current and critical magnetic field."],
+    correct: 3
+  },
+
+  // Unit IV: Semiconductors
+  {
+    id: 126,
+    question: "Solids with high value of conductivity are called:",
+    options: ["Conductors", "Non-metal", "Insulator", "Semi-conductor"],
+    correct: 0
+  },
+  {
+    id: 127,
+    question: "Fermi level for a metal is",
+    options: ["Highest energy level occupied by electrons at 0°C", "Average value of all available energy levels", "Highest energy level occupied by electrons at 0 K", "Addition of energy of all available electron energy levels"],
+    correct: 2
+  },
+  {
+    id: 128,
+    question: "The probability of occupation of the electrons at any temperature is given as,",
+    options: ["Option (a)", "Option (b)", "Option (c)", "Option (d)"],
+    correct: 2
+  },
+  {
+    id: 129,
+    question: "The relationship between current density J and electric field E is",
+    options: ["J = σE", "J = σ / E", "J = σ/2E", "J = 1/ σ E"],
+    correct: 0
+  },
+  {
+    id: 130,
+    question: "Intrinsic semiconductors are those",
+    options: ["Which are made of semiconductor material in its purest form", "Which have zero energy gap", "Which have more electrons than holes", "Which are available locally"],
+    correct: 0
+  },
+  {
+    id: 131,
+    question: "A pure semiconductor behaves like an insulator at 0 K because",
+    options: ["There is no recombination of electrons with holes", "Drift velocity of free electrons is very small", "Free electrons are not available for current conduction", "Energy possessed by electrons at that low temperature is almost zero"],
+    correct: 2
+  },
+  {
+    id: 132,
+    question: "Which of the following about Fermi-Dirac distribution is false?",
+    options: ["When E = EF, the probability of finding an electron with energy equal to the Fermi energy in a metal is ½ at all temperatures.", "At T = 0 K all the energy level up to EF are occupied and all the energy levels above EF are empty.", "When T > 0 K, some levels above EF are partially filled while some levels below EF are partially empty.", "When T = 0 K, some levels above EF are partially filled while some levels below EF are empty."],
+    correct: 3
+  },
+  {
+    id: 133,
+    question: "Examples of Fermions are",
+    options: ["Electrons", "Photons", "Phonons", "Atoms"],
+    correct: 0
+  },
+  {
+    id: 134,
+    question: "Using Fermi distribution function, the value of f(E) for (E – EF) = 0.01 eV at 200 K is",
+    options: ["0.36", "0.64", "0.45", "0.55"],
+    correct: 0
+  },
+  {
+    id: 135,
+    question: "An elemental semiconductor is formed by ……… bonds.",
+    options: ["Covalent", "Electrovalent", "Co-ordinate", "Ionic"],
+    correct: 0
+  },
+  {
+    id: 136,
+    question: "A semiconductor has ………… temperature coefficient of resistance.",
+    options: ["Positive", "Zero", "Negative", "Infinite"],
+    correct: 2
+  },
+  {
+    id: 137,
+    question: "The most commonly used semiconductor is ………..",
+    options: ["Gallium", "Silicon", "Carbon", "Arsenide"],
+    correct: 1
+  },
+  {
+    id: 138,
+    question: "A semiconductor has generally ……………… valence electrons.",
+    options: ["2", "3", "6", "4"],
+    correct: 3
+  },
+  {
+    id: 139,
+    question: "When a pentavalent impurity is added to a pure semiconductor, it becomes ………",
+    options: ["An insulator", "An intrinsic semiconductor", "p-type semiconductor", "n-type semiconductor"],
+    correct: 3
+  },
+  {
+    id: 140,
+    question: "Addition of pentavalent impurity to a semiconductor creates …….",
+    options: ["Donor electrons", "Holes", "Valence electrons", "Bound electrons"],
+    correct: 0
+  },
+  {
+    id: 141,
+    question: "A pentavalent impurity has ………. valence electrons",
+    options: ["3", "5", "4", "6"],
+    correct: 1
+  },
+  {
+    id: 142,
+    question: "An n-type semiconductor is ………",
+    options: ["Positively charged", "Negatively charged", "Electrically neutral", "None of the answers"],
+    correct: 2
+  },
+  {
+    id: 143,
+    question: "A trivalent impurity has ….. valence electrons",
+    options: ["4", "5", "6", "3"],
+    correct: 3
+  },
+  {
+    id: 144,
+    question: "Addition of trivalent impurity to a semiconductor creates …….",
+    options: ["Holes", "Donor electrons", "Valence electrons", "Bound electrons"],
+    correct: 0
+  },
+  {
+    id: 145,
+    question: "A hole in a semiconductor is defined as …………….",
+    options: ["A free electron", "Electron vacancy", "A free proton", "A free neutron"],
+    correct: 1
+  },
+  {
+    id: 146,
+    question: "As the doping to a pure semiconductor increases, the bulk resistance of the semiconductor ………..",
+    options: ["Remains the same", "Increases", "Decreases", "Becomes zero"],
+    correct: 2
+  },
+  {
+    id: 147,
+    question: "In an intrinsic semiconductor, current conduction is due to …….",
+    options: ["Only holes", "Only electrons", "Both holes and electrons", "None of the answers"],
+    correct: 2
+  },
+  {
+    id: 148,
+    question: "When a pure semiconductor is heated, its resistance ………….",
+    options: ["Increases", "Decreases", "Remains the same", "Can't say"],
+    correct: 1
+  },
+  {
+    id: 149,
+    question: "In an intrinsic semiconductor, the number of free electrons ………",
+    options: ["Equals the number of holes", "Is greater than the number of holes", "Is less than the number of holes", "None of the answers"],
+    correct: 0
+  },
+  {
+    id: 150,
+    question: "At room temperature, an intrinsic semiconductor has ……….",
+    options: ["Holes only", "Electrons and holes", "Electrons only", "No holes and no electrons"],
+    correct: 1
+  },
+  {
+    id: 151,
+    question: "At absolute temperature, an intrinsic semiconductor has ……….",
+    options: ["A few free electrons", "Many holes", "Many free electrons", "No holes and no free electrons"],
+    correct: 3
+  },
+  {
+    id: 152,
+    question: "Which of the following is known as indirect band gap semiconductors?",
+    options: ["Germanium", "GaAs", "GaAsP", "Carbon"],
+    correct: 0
+  },
+  {
+    id: 153,
+    question: "Which of the following is a semiconductor",
+    options: ["Diamond", "Arsenic", "Phosphorous", "Gallium arsenide"],
+    correct: 3
+  },
+  {
+    id: 154,
+    question: "In an intrinsic semiconductor, the Fermi level",
+    options: ["Lies at the middle of the forbidden energy gap.", "Is near the conduction band.", "Is near the valence band.", "May be anywhere in the forbidden energy gap."],
+    correct: 0
+  },
+  {
+    id: 155,
+    question: "For silicon, the energy gap at 300 K is",
+    options: ["0.7 J", "1.1 J", "1.1 eV", "0.7 eV"],
+    correct: 2
+  },
+  {
+    id: 156,
+    question: "The forbidden gap for germanium is,",
+    options: ["0.7 J", "0.7 eV", "1.1 eV", "1.1 J"],
+    correct: 1
+  },
+  {
+    id: 157,
+    question: "In a N-type semiconductor, the position of Fermi-level is",
+    options: ["Close to the valance band", "in the middle of the energy band gap", "close to the conduction band", "Can be any where"],
+    correct: 2
+  },
+  {
+    id: 158,
+    question: "The mobility of electrons in a material is expressed in unit of:",
+    options: ["V/s", "m²/V-s", "m²/s", "J/K"],
+    correct: 1
+  },
+  {
+    id: 159,
+    question: "The energy gap in a semiconductor",
+    options: ["Increases with temperature", "Does not change with temperature", "Decreases with temperature", "Is zero"],
+    correct: 1
+  },
+  {
+    id: 160,
+    question: "Donor impurity atoms in semiconducting material results a new",
+    options: ["Wide energy band", "Narrow energy band", "Discrete energy level just below conduction band", "Discrete energy level just above valance band"],
+    correct: 2
+  },
+  {
+    id: 161,
+    question: "Hall Effect is clearly visible in _______________",
+    options: ["Insulators", "Semiconductors", "Super conductors", "Non metals"],
+    correct: 1
+  },
+  {
+    id: 162,
+    question: "Which of the following represents correct expression for Lorentz force?",
+    options: ["BeV", "BV", "eV", "B"],
+    correct: 0
+  },
+  {
+    id: 163,
+    question: "Hall effect can be used to measure",
+    options: ["Magnetic field intensity", "Mobility", "Carrier concentration", "All the answers"],
+    correct: 3
+  },
+  {
+    id: 164,
+    question: "Which of the following parameters can't be found with Hall Effect?",
+    options: ["Type of semiconductors (p or n type)", "Conductivity", "Carrier concentration", "Area of the device"],
+    correct: 3
+  },
+  {
+    id: 165,
+    question: "In the Hall Effect, the electric field is in X direction and the velocity is in Y direction. Then the direction of the magnetic field is",
+    options: ["X", "Y", "Z", "XY plane"],
+    correct: 2
+  },
+  {
+    id: 166,
+    question: "The number of electrons in a semiconductor is 10²⁰. Then the Hall coefficient is",
+    options: ["0.625", "0.0625", "6.25", "62.5"],
+    correct: 1
+  },
+  {
+    id: 167,
+    question: "Calculate the conductivity of silicon doped with 10²¹ atoms m⁻³ of boron if the mobility of holes is 0.048 m²v⁻¹s⁻¹.",
+    options: ["76.8/Ωm", "7.68/Ωm", "7.68 Ωm", "0.768/Ωm"],
+    correct: 1
+  },
+  {
+    id: 168,
+    question: "Calculate the resistivity of intrinsic germanium if the intrinsic carrier density is 2.5 x 10¹⁹ m⁻³ assuming electron and hole mobilities of 0.38 and 0.18 m²v⁻¹s⁻¹ respectively.",
+    options: ["0.45/Ωm", "0.045 Ωm", "0.45 Ωm", "4.50 Ωm"],
+    correct: 2
+  },
+  {
+    id: 169,
+    question: "A semiconductor sample of thickness 1.2 x 10⁻⁴m is placed in a magnetic field of 0.2T acting perpendicular to its thickness. The Hall voltage generated when a current of 100 mA passes through it is (Assume the carrier concentration to be 10²³ m⁻³)",
+    options: ["0.123 V", "0.0123 V", "1.23 V", "0.0012 V"],
+    correct: 1
+  },
+  {
+    id: 170,
+    question: "Intrinsic silicon has a carrier concentration of 1.1 x 10¹⁶ m⁻³. If the mobilities of electrons and holes are 0.17 and 0.035 m²v⁻¹s⁻¹ respectively at room temperature, the resistivity of silicon is",
+    options: ["0.277x10³ Ωm", "27.7x10³ Ωm", "2.77x10³ Ωm", "0.0277x10³ Ωm"],
+    correct: 2
+  },
+  {
+    id: 171,
+    question: "The compound gallium arsenide has an intrinsic conductivity of 10⁻⁶ ohm⁻¹ m⁻¹ at 20°C. How many electrons have jumped the forbidden energy gap? [Given: μe = 0.88 m²V⁻¹s⁻¹ and μh = 0.04 m²V⁻¹s⁻¹]",
+    options: ["6.79 x10³ m⁻³", "0.679 x10³ m⁻³", "67.9 x10³ m⁻³", "0.0679 x10³ m⁻³"],
+    correct: 0
+  },
+  {
+    id: 172,
+    question: "Measurement of Hall coefficient enables the determination of :",
+    options: ["Temperature coefficient and thermal conductivity", "Mobility and carrier concentration", "Fermi level and forbidden energy gap", "Area of the device"],
+    correct: 1
+  },
+  {
+    id: 173,
+    question: "For a particular material, the Hall coefficient is found to be zero. The material is",
+    options: ["Intrinsic semiconductor", "Extrinsic semiconductor", "Metal", "Insulator"],
+    correct: 3
+  },
+  {
+    id: 174,
+    question: "What happens to the Hall voltage in a conductor if the magnetic field is reversed (i.e., its direction is flipped)?",
+    options: ["The Hall voltage becomes zero.", "The Hall voltage changes direction but remains the same magnitude.", "The Hall voltage doubles in magnitude.", "The Hall voltage remains unchanged."],
+    correct: 1
+  },
+  {
+    id: 175,
+    question: "In which direction does the Hall voltage develop in a conductor when a magnetic field is applied perpendicular to the current?",
+    options: ["Parallel to the current direction", "Perpendicular to both the magnetic field and the current direction", "In the same direction as the magnetic field", "Opposite to the magnetic field direction"],
+    correct: 1
+  },
+  {
+    id: 176,
+    question: "An intrinsic semiconductor, at the absolute zero temperature, behaves like which one of the following?",
+    options: ["Insulator", "Superconductor", "n-type semiconductor", "p-type semiconductor"],
+    correct: 0
+  },
+  {
+    id: 177,
+    question: "In intrinsic semiconductors, number of electrons is ___________ number of holes",
+    options: ["equal to", "greater than", "less than", "none of the above"],
+    correct: 0
+  },
+  {
+    id: 178,
+    question: "When a pure semiconductor is heated, its resistance",
+    options: ["goes up", "goes down", "remains the same", "none of the above"],
+    correct: 1
+  },
+  {
+    id: 179,
+    question: "Intrinsic semiconductor at room temperature will have ______available for conduction.",
+    options: ["Electrons", "Holes", "Both electrons and holes", "None of the above"],
+    correct: 2
+  },
+  {
+    id: 180,
+    question: "The density of charge carriers in a pure semiconductor is proportional to",
+    options: ["exp(-Eg/kT)", "exp(-2Eg/kT)", "exp((-Eg/kT²)", "exp(-Eg/2kT)"],
+    correct: 3
+  },
+  {
+    id: 181,
+    question: "In an intrinsic semiconductor",
+    options: ["σ = n e μe e", "σ = n h μh e", "σ = ni e (μe+μh)", "ne μe e > nh μh e"],
+    correct: 2
+  },
+  {
+    id: 182,
+    question: "A semiconductor has generally ……………… valence electrons.",
+    options: ["2", "3", "4", "5"],
+    correct: 2
+  },
+  {
+    id: 183,
+    question: "A semiconductor has ………… temperature coefficient of resistance.",
+    options: ["Positive", "Negative", "Both positive and negative", "Infinite"],
+    correct: 1
+  },
+  {
+    id: 184,
+    question: "Which of the following statements about the Hall effect in is true?",
+    options: ["The Hall effect cannot occur in semiconductors", "The Hall effect occurs only in metals.", "The Hall effect can provide information about the concentration and type of charge carriers", "The Hall effect is observed only at very low temperatures"],
+    correct: 2
+  },
+  {
+    id: 185,
+    question: "What is the primary function of a solar cell?",
+    options: ["To store solar energy in chemical form", "To reflect sunlight to solar heaters", "To convert sunlight directly into electrical energy", "To absorb and retain heat from sunlight"],
     correct: 2
   },
 
-  // Unit 3: Lasers & Optical Fibers
+  // Unit V: Lasers & Optical Fibers
   {
-    id: 97,
+    id: 186,
     question: "Important characteristic of laser beam is",
     options: ["Interference", "Diffraction", "Dispersion", "Coherence"],
     correct: 3
   },
   {
-    id: 98,
+    id: 187,
     question: "Emission of a photon by an excited atom due to interaction with a passing photon nearby is called",
     options: ["Spontaneous emission", "Induced absorption", "Stimulated emission", "Thermionic emission"],
     correct: 2
   },
   {
-    id: 99,
+    id: 188,
     question: "Metastable states are",
     options: ["Ground state energy states.", "Excited state energy levels in which electrons stay for very short interval of time.", "Excited state energy levels in which electron can stay for unusually long time.", "Nuclear energy states."],
     correct: 2
   },
   {
-    id: 100,
+    id: 189,
     question: "The required condition to achieve laser action in a system is",
     options: ["State of population inversion", "Excitation source", "A resonant cavity", "All the three"],
     correct: 3
   },
   {
-    id: 101,
-    question: "What is the need to achieve population inversion?",
-    options: ["To excite most of the atoms", "To bring most of the atoms to ground state", "To achieve stable condition", "To reduce the time of production of laser"],
-    correct: 0
+    id: 190,
+    question: "The purpose of the optical cavity in a laser is to:",
+    options: ["Convert electrical energy into light", "Amplify the light through multiple passes between mirrors", "Filter out unwanted frequencies of light", "Focus the light into a beam"],
+    correct: 1
   },
   {
-    id: 102,
+    id: 191,
     question: "In a laser, the mirrors are there on either side of the device",
     options: ["In order to filter the heat & leave out only the light.", "To protect the eyes of the observer.", "To save energy of the excitation source.", "So that same photons continue to cause further batches of stimulated transitions."],
     correct: 3
   },
   {
-    id: 103,
+    id: 192,
     question: "Nd:YAG laser is a",
     options: ["Two level laser", "Three level laser", "Four level laser", "Five level laser"],
     correct: 2
   },
   {
-    id: 104,
+    id: 193,
     question: "In He-Ne laser, the ratio of He to Ne gas molecules is of the order",
     options: ["1:10", "1:1", "10:1", "100:1"],
     correct: 2
   },
   {
-    id: 105,
-    question: "The pumping sourse in Nd:YAG laser is",
+    id: 194,
+    question: "The pumping source in Nd:YAG laser is",
     options: ["Chemical", "Optical", "Electrical", "Mechanical"],
     correct: 1
   },
   {
-    id: 106,
+    id: 195,
     question: "Which color of light has the shortest wavelength ?",
     options: ["Yellow", "Blue", "Red", "Green"],
     correct: 1
   },
   {
-    id: 107,
+    id: 196,
     question: "Laser action is found in _________ semiconductor.",
     options: ["direct band gap", "indirect band gap", "germanium", "silicon"],
     correct: 0
   },
   {
-    id: 108,
+    id: 197,
     question: "The light from a laser source is monochromatic because all the photons",
     options: ["are in phase", "have same energy", "have same amplitude", "are in the same direction"],
     correct: 1
   },
   {
-    id: 109,
+    id: 198,
     question: "Which one of the following statements best describes stimulated emission in a laser?",
     options: ["Electrons collide with atoms in a metastable state and cause photons to be emitted.", "Atoms in a metastable state de-excite and cause electrons to be emitted.", "Photons interact with atoms in a metastable state and cause photons to be emitted.", "Photons interact with atoms in a metastable state and cause electrons to be emitted."],
     correct: 2
   },
   {
-    id: 110,
+    id: 199,
     question: "Which of the following is an example of optical pumping?",
     options: ["Nd:YAG", "Helium-Neon laser", "Semiconductor laser", "Dye laser"],
     correct: 0
   },
   {
-    id: 111,
+    id: 200,
     question: "Why is laser light monochromatic?",
     options: ["The excited electrons are in a metastable state.", "The system is in a state of population inversion.", "The emitted photon and incident photon are of the same phase.", "Photons of the same energy as that of the incident photons are emitted when the electrons transit down from a higher energy level."],
     correct: 3
   },
   {
-    id: 112,
+    id: 201,
     question: "Which of the following statements concerning a laser system is incorrect?",
     options: ["Spontaneous emission occurs in the laser system.", "The intensity of the laser beam can be varied by changing the reflective coefficient of the partially reflecting mirror.", "The laser system does not require an external energy source.", "The laser medium consists of a metastable state."],
     correct: 2
   },
   {
-    id: 113,
+    id: 202,
     question: "The active medium in Nd:YAG laser is",
     options: ["Neodymium", "YAG crystal", "Yttrium", "Aluminium"],
     correct: 0
   },
   {
-    id: 114,
+    id: 203,
     question: "The number of atoms in the excited state becomes much greater than the number of atoms in the ground state. This is known as",
     options: ["normal population", "population inversion", "stimulated emission", "spontaneous emission"],
     correct: 1
   },
   {
-    id: 115,
+    id: 204,
     question: "Laser light is intense because",
     options: ["it has very less number of Photons that in phase", "it has very less number of Photons that are not in phase", "it has very large number of Photons that are in phase", "it has very large number of Photons that are not in phase"],
     correct: 2
   },
   {
-    id: 116,
+    id: 205,
     question: "The emission of photon without being aided by any external agency is called",
     options: ["light amplification", "induced absorption", "stimulated emission", "spontaneous emission"],
     correct: 3
   },
   {
-    id: 117,
+    id: 206,
     question: "The lifetime of an atom at the ordinary excited state is of the order of",
     options: ["few millisecond", "few nanosecond", "few microsecond", "unlimited"],
     correct: 1
   },
   {
-    id: 118,
+    id: 207,
     question: "The lifetime of an atom in a metastable state is of the order of",
     options: ["a few second", "Unlimited", "A nanosecond", "Few millisecond"],
     correct: 3
   },
   {
-    id: 119,
+    id: 208,
     question: "Supply of energy to atoms for excitation is called",
     options: ["Glowing", "Bombarding", "Incidenting", "Pumping"],
     correct: 3
   },
   {
-    id: 120,
-    question: "In a semiconductor laser there are no mirrors used because",
+    id: 209,
+    question: "Semiconductor lasers do not require two external mirrors to form an optical cavity because",
     options: ["the laser light required is of low power", "mere driving a minimum current in the diode is enough for laser action", "p-section acts as one mirror and n-section acts as the other mirror", "a pair of parallel planes cleaved or polished at a particular angle in the crystal reflect the light efficiently"],
     correct: 3
   },
-  {
-    id: 121,
+{
+    id: 210,
     question: "A semiconductor laser has a peak emission radiation of wavelength 1.24 μm. What is its band gap value in eV?",
     options: ["1.4 eV", "1.6 eV", "1 eV", "1.8 eV"],
     correct: 2
   },
   {
-    id: 122,
+    id: 211,
     question: "A He-Ne laser emits light at a wavelength of 632.8 nm and has an output power of 5 mW. The number of photons emitted in each second by this laser are",
     options: ["1.79 x 10¹⁸ Photons/sec", "1.59 x 10¹⁶ Photons/sec", "0.6 x 10¹⁶ photons/sec", "1.59 x 10¹⁸ photons/sec"],
     correct: 1
   },
   {
-    id: 123,
+    id: 212,
     question: "If the wavelength of light emitted by spontaneous emission is 696 nm at 300K, the ratio of population of two energy levels is",
     options: ["1.059 x 10⁻³²", "1.059 x 10⁻³³", "0.059 x 10⁻³⁰", "1.059 x 10⁻³⁰"],
     correct: 3
   },
   {
-    id: 124,
+    id: 213,
     question: "If a pulsed laser emits photons of wavelength 780 nm with 20 mW average power/pulse, the number of photons contained in each pulse if the pulse duration is 10 ns is",
     options: ["7.86 x 10⁸", "5.08 x 10⁸", "3.86 x 10⁸", "1.86 x 10⁸"],
     correct: 0
   },
   {
-    id: 125,
+    id: 214,
     question: "The wavelength of radiation emitted by a semiconducting laser with band gap energy 2.8eV.",
-    options: ["2.8 Å", "4.3308 Å", "5548.4 Å", "4430.8 Å"],
+    options: ["2.8 Å", "4.3308 Å", "5548.4 Å", "4439.8 Å"],
     correct: 3
   },
   {
-    id: 126,
-    question: "Numerical aperture of an optical fiber depends on",
-    options: ["Diameter of the fiber", "Acceptance angle", "Critical angle", "Refractive index of core"],
-    correct: 1
-  },
-  {
-    id: 127,
+    id: 215,
     question: "Optical fiber works on the phenomenon of _______",
     options: ["total internal reflection", "polarization", "diffraction", "refraction"],
     correct: 0
   },
   {
-    id: 128,
+    id: 216,
     question: "What is the other name for a maximum external incident angle?",
     options: ["Optical angle", "Total internal reflection angle", "Refraction angle", "Wave guide acceptance angle"],
     correct: 3
   },
   {
-    id: 129,
+    id: 217,
     question: "How does the refractive index vary in Graded Index fibre?",
     options: ["Tangentially", "Radially", "Longitudinally", "Transversely"],
     correct: 1
   },
   {
-    id: 130,
+    id: 218,
     question: "Which of the following has more distortion?",
     options: ["Single step-index fibre", "Graded index fibre", "Multimode step-index fibre", "Glass fibre"],
     correct: 2
   },
   {
-    id: 131,
+    id: 219,
     question: "What causes microscopic bend?",
-    options: ["Uniform pressure", "Non-uniform volume", "Uniform volume", "Non-uniform pressure"],
+    options: ["Absorption", "Scattering", "Impurities", "Non-uniform pressure"],
     correct: 3
   },
   {
-    id: 132,
+    id: 220,
     question: "The loss in signal power as light travels down a fiber is called",
     options: ["Dispersion", "Scattering", "Absorption", "Attenuation"],
     correct: 3
   },
   {
-    id: 133,
+    id: 221,
     question: "The inner portion of the optical fiber cable is called",
     options: ["Cladding", "Coating", "Inner conductor", "Core"],
     correct: 3
   },
   {
-    id: 134,
+    id: 222,
     question: "When more than one mode is propagating, how is it dispersed?",
     options: ["Dispersion", "Inter-modal dispersion", "Material dispersion", "Waveguide dispersion"],
     correct: 1
   },
   {
-    id: 135,
+    id: 223,
     question: "The core of an optical fiber has a",
     options: ["Lower refracted index than air", "Lower refractive index than the cladding", "Higher refractive index than the cladding", "Similar refractive index with the cladding"],
     correct: 2
   },
   {
-    id: 136,
+    id: 224,
     question: "Having cladding around the core is preferred to coating the core with a reflecting material(silvering) because",
     options: ["Silvering is not economical", "Coating may get affected by abrasions", "Coated material may undergo chemical changes in the field conditions and thus become dull", "The total internal reflection at the core-cladding interface is superior to the one by any coated material"],
     correct: 3
   },
   {
-    id: 137,
+    id: 225,
     question: "Attenuation means",
     options: ["Amplification of signal strength", "Division of signal strength", "Loss of signal strength", "Tuning of signal"],
     correct: 2
   },
   {
-    id: 138,
+    id: 226,
     question: "In an optical fiber the signal loss due to scattering is mainly due to",
     options: ["Rayleigh scattering", "Raman scattering", "Wein's scattering", "All the answers"],
     correct: 0
   },
   {
-    id: 139,
+    id: 227,
     question: "In an optical fiber, Rayleigh scattering occurs when a photon",
     options: ["Encounters an impurity atom in its path", "Hits the cladding", "Encounters sharp changes in refractive index over distances smaller than its wavelength", "Encounters a microscopic bend"],
     correct: 2
   },
   {
-    id: 140,
+    id: 228,
     question: "Signal distortion occurs due to",
     options: ["Irregularities in fiber structure", "Variation in refractive index of the core at different points", "Spreading of pulse", "Macroscopic bend"],
     correct: 2
   },
   {
-    id: 141,
+    id: 229,
     question: "The numerical aperture of an optical fiber in air is 0.32. The numerical aperture of an optical fiber in water of R.I. 1.33 is",
-    options: ["0.43", "0.24", "0.64", "0.96"],
+    options: ["0.43", "0.32", "0.64", "0.96"],
     correct: 1
   },
   {
-    id: 142,
+    id: 230,
     question: "The numerical aperture of a fiber if the angle of acceptance is 15 degrees, is",
     options: ["0.17", "0.26", "0.50", "0.75"],
     correct: 1
   },
   {
-    id: 143,
+    id: 231,
     question: "Fractional index change for an optical fiber with core and cladding of refractive indices 1.563 and 1.498 respectively is",
     options: ["0.00415", "0.04159", "0.04300", "0.00400"],
     correct: 1
   },
   {
-    id: 144,
+    id: 232,
     question: "The angle of acceptance of an optical fiber with numerical aperture of 0.446 is",
     options: ["26.49°", "7.78°", "20.5°", "30.6°"],
     correct: 0
   },
   {
-    id: 145,
+    id: 233,
     question: "An optical signal loses 15% of its power after traversing a fiber length of 400 m. The fiber loss is",
     options: ["0.0176", "1.7645", "17.645", "0.1764"],
     correct: 1
   },
   {
-    id: 146,
+    id: 234,
     question: "The attenuation in an optical fiber of length 500 m, when a light signal of power 100 mW emerges out of the fiber with a power of 90 mW is",
     options: ["0.0915 dB/km", "0.00915dB/km", "9.15 dB/km", "0.915 dB/km"],
     correct: 3
   },
   {
-    id: 147,
+    id: 235,
     question: "Optical fibers are used in",
     options: ["CAT scans", "X-ray photos", "Ultrasound scans", "Endoscopy"],
     correct: 3
   },
   {
-    id: 148,
+    id: 236,
     question: "Which fiber is preferred for long distance communication?",
-    options: ["Step index single mode fiber", "Graded index multimode fiber", "Step index multimode fiber", "Graded index fiber"],
+    options: ["Step index single mode fiber", "Graded index multimode fiber", "Step index multimode fiber", "Both single mode and multimode fibers."],
     correct: 0
   },
   {
-    id: 149,
+    id: 237,
     question: "In the structure of the fiber optic cable, the refractive index of the core is always ____ the refractive index of the cladding",
     options: ["Less than", "Equal to", "Greater than", "None of these"],
     correct: 2
   },
   {
-    id: 150,
+    id: 238,
     question: "The numerical aperture (NA) in optical fiber is used to describe",
     options: ["Light spreading ability", "Light gathering or light-collecting ability", "Light output from an external shield", "Light leakage ability"],
     correct: 1
   },
   {
-    id: 151,
+    id: 239,
     question: "The refractive index of the core is uniform throughout and undergoes an abrupt change at the cladding boundary which is known as______",
     options: ["Uniform-index fiber", "Scale-index fiber", "Graded-index fiber", "Step index fiber"],
     correct: 3
-  }
+  },
+  {
+    id: 240,
+    question: "Emission of a photon by an excited atom due to interaction with a passing photon nearby is called",
+    options: ["Spontaneous emission", "Induced absorption", "Stimulated emission", "Thermionic emission"],
+    correct: 2
+  },
+  {
+    id: 241,
+    question: "In a laser, the mirrors are used on either side of the device",
+    options: ["In order to filter the heat & leave out only the light.", "To protect the eyes of the observer", "So that same photons continue to cause further batches of stimulated transitions", "To save energy of the excitation source"],
+    correct: 2
+  },
+  {
+    id: 242,
+    question: "The loss in signal power as light travels down a fiber is called",
+    options: ["Dispersion", "Scattering", "Absorption", "Attenuation"],
+    correct: 3
+  }  
 ];
 
         this.currentQuestions = [];
